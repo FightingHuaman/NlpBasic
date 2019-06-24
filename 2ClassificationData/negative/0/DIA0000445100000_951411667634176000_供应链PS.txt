@@ -1,0 +1,7 @@
+在我成長的道路中，有一個行業在飛速發展--網購。當我小時候，我只在科幻書上看過這一構想，但隨著我長大，Amazon等网购网站使得商品運輸與成為每個人生活不可分割的部分。作为与這一行業共同成长起来的小女孩，我觉得货物在不同地区之间流动非常神奇。儘管每個人與商品距離遙遠，但大家都可以在任何时间，运输任何自己需要的东西。這一目標的實現離不開龐大的物流系統支持，於是深入學習Supply Chain Management就成為我的志向。在选择大学专业时，我认为物流的發展依赖于交通系统的支持，想要知道物流规律的本质，需要先对交通系统有清楚的认识。因此当时我选择了交通管理，在四年的学习中从交通运行的角度，为货物运输理论打下扎实的基础。
+
+During my undergraduate studies in Transportation Management, I focused specifically on logistics.我在供应链管理课程中学习Bullwhip effect,对比开放供应链与封闭供应链在运行规律的不同；在国际多式联运課程中,學習不同运输方式的使用条件，并獨立進行物流方案设计，all of which laid a solid theoretical foundation and made me more dedicated to the development of the Logistics industry. Throughout college, I was involved in multiple research projects to apply my knowledge and discover new patterns in the logistics industry.for example,我带领团隊開發Smart Antiskid Sand Blasting System for Vehicles并撰写论文，有效解决货物在冰雪等弱附着面上运输的打滑问题，从而保证物流在恶劣天气状况中的及时性和可达性，并在中国大学生最权威的兩項竞赛中获得省级荣誉。在大一時，我作为负责人开发了"Sea  Mail"  Campus  Theme  Post  Office Project  ，应用dynamic programming，设计信件在不同校区，不同学院之间投递的最佳线路。
+
+Based on my multiple research projects, I realized that未来企业之间的竞争将不再是个体之间的竞争，而是供应链之间的竞争。成熟的企业应该将眼光從本行业的业务，擴展到上下游企业之间的配合。从整体的物流战略规划出發，才能减少资源浪费，提高盈利。同时，物流不再是企业发展的利器，它也正在成为每个人生活的一部分中。 
+
+

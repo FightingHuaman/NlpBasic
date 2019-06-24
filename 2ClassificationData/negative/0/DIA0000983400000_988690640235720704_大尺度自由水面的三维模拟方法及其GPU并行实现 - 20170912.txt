@@ -1,0 +1,170 @@
+大尺度自由水面的三维模拟方法及其GPU并行实现
+彭永勤1，张绪进1，刁伟1，2,，张春泽1，2,*
+(1.重庆交通大学西南水运工程科学研究所，重庆 400016； 2.武汉大学 水资源与水电科学国家重点实验室，湖北 武汉市 430072)
+摘要：水波动力学及其工程应用一直是水力学研究中的关键问题。对于水利工程中的大尺度自由水面流动现象，目前还缺乏高效、准确的三维数值模拟方法。本文将基于格子Boltzmann方法的单相自由液面模型与大涡模拟方法相结合，建立了用于模拟大尺度水波运动的数值模型，并在图形处理器(Graphic Processing Unit, GPU) 上实现了高效的大规模并行计算。该方法具有模拟准确、计算高效、算法易于编程实现等优点。首先，应用本文模型对水坝坝体完全溃决、部分溃决后的溃坝波演进过程进行模拟和分析，得到与文献资料一致的模拟结果，验证了本文模型的正确性。同时根据流速的三维分布特征，分析了部分溃坝后水体内部卧轴漩涡、立轴漩涡的生成机制。之后，模拟和分析了非等高河床上溃坝水流的推进和演化过程，得到了与参考资料一致的瞬时水面形态，以及更准确的水位波动时间曲线。最后，本文模拟了某实际拱坝的泄洪现象，描述了下泄水舌的扩散、水面的破碎和融合等过程，并模拟得到了与经验公式一致的泄流系数，说明本文方法可用于实际工程中大尺度水面流动问题的三维模拟研究。分析表明，本文的GPU并行实现关键技术，使得该模拟在单卡GPU上对计算格点的演进达到数千万次每秒，相对单核CPU计算加速超过50倍，实现了对实际物理问题高效、准确的模拟。
+
+
+关键字：格子Boltzmann方法；单相自由水面；大涡模拟；GPU并行计算；溃坝波；大尺度三维模拟；
+Study of Three-Dimensional Numerical Method for Simulating Large-scale Free Water Surface by GPU Massive Parallel Computing
+PENG Yongqin1,ZHANG Xujin 1,DIAO Wei1，2,ZHANG Chunze1，2,*
+( 1. Southwest Inst. of Water transport Eng., Chongqing Jiaotong Univ., Chongqing 400016, China; 2.State Key Laboratory of Water Resources and Hydropower Eng. Sci., Wuhan Univ., Wuhan 430072, China)
+Abstract：Water wave dynamics and their engineering application have long been a key issue in the field of hydraulics, and effective and efficient numerical methods need to be proposed to perform three-dimensional (3-D) simulation of large-scale water fluctuation in engineering practice. A single-phase free-surface lattice Boltzmann method (SPFS-LB method) is coupled with a large-eddy simulation approach for simulating large-scale free water surface flows, and the simulation is accelerated on GPU (Graphic Processing Unit). The advantages of the proposed method includes but not limited to high accuracy, high computation efficiency and simple algorithm. Firstly, the coupling model is used to simulate suddenly whole and partial dam-break waves, and the consistence between the simulated water surface profile and the reference data validates the present model. And the generative mechanism of horizontal-axis vortices and vertical-axis vortices in partial dam-break waves is analyzed based on 3-D velocity distribution. Then the newly developed model is applied to simulate the dam-break flow over a triangular step. The simulated instantaneous water surface agrees well with that of the reference data, and the simulated water depth series are more precise. This simulation shows that the present method is more feasible and powerful than shadow water model for studying practical flow fluctuation. Finally, the flood discharge of arch dam is simulated and analyzed. The released flow from reservoirs is rapidly diffusing, and the water surface in downstream river is broken down and merged together randomly. The simulated hydraulic parameters agree well with empirical results. The proposed method for large-scale water fluctuations can be used to study practical engineering problems. Based on the key technology of parallel computing on GPU, the implementation of the SPFS-LB model on a GPU unit achieves tens of millions of lattice update per second, which is over fifty times higher than that on a single CPU chip.
+Key words: lattice Boltzmann method; single-phase free surface; large-eddy simulation; parallel computing on GPU; dam-break wave; large-scale three-dimensional simulation;
+收稿日期：   
+基金项目：国家自然科学基金面上项目（No.11172219 柔性结构流固耦合生物湍流的浸没边界模拟方法及应用研究）；重庆市科委自然科学基金计划资助项目（cstc2016jcyjA1935，柔性植被流固耦合三维湍流的浸没边界模拟方法研究）；重庆市教委自然科学基金计划资助项目（KJ1600514，湍流与波浪作用下柔性植物叶片大变形流固耦合数值模拟方法研究）；重庆交通大学内河航道整治技术交通行业重点实验室开放基金重点项目(NHHD-201505，船舶在复杂通航环境下行进的高效三维流固耦合模拟方法研究)
+作者简介：彭永勤（1983-），女，助理研究员，博士在读，从事复杂三维流场数值模拟研究.E_mail:373216627@qq.com
+网络出版时间：                                      网络出版地址：
+1. 前言
+   水面波动现象在自然界中广泛存在，比如河流波浪和潮汐涨落等。水面波动问题在水利工程中同样是研究热点，如库区滑坡涌波[1]、水电站调压室的涌浪[2]、高坝的溢洪泄流[3]等，此类流动问题有如下特点：1）流动的空间尺度大，控制流动的边界条件复杂；2）水与空气的密度比、粘度比非常大；3）水面的运动状态几乎由水流流态所控制，而可以忽略空气对其的影响。基于以上原因，此类流动亦被称为大尺度自由水面（LS-FS）流动现象。
+   目前，对大尺度自由水面运动的数值模拟主要以二维（2D）方法居多。其中又以不考虑垂向流速变化的浅水波方程方法为主，此类方法已经成为工程中模拟河流、湖泊等大尺度流场的主要手段[4,5]。但此类方法难以反映水流的垂向运动特性，也不能模拟水面的破碎、融合等现象。因而对于三维(3D)指征明显的自由水面（如闸墩尾流、高坝泄洪等）还需要通过3D方法模拟。常规的3D自由水面数学模型主要为两相流模型[6]或界面捕捉模型（包括VOF算法[7]、Level Set算法[8]和MAC算法[9]等），但现有3D方法模拟LS-FS问题时，不但对计算资源有很高需求，而且其数值计算稳定性、网格收敛性等也不易保证。
+   单相自由液面格子Boltzmann模型（Single Phase Free Surface Lattice Boltzmann Model, SPFS-LB模型）是一种优异的3D自由液面流动模拟方法[10,11]。SPFS-LB模型仅对水流进行模拟，无需考虑空气的影响，对计算资源的消耗较低。另外，该模型基于格子Boltzmann（LB）方法求解流场，更具有算法简单、并行性好、边界条件易于处理、方便编程等优点[12]。
+   图形处理器(Graphic Processing Unit, GPU)在硬件上采用了超长流水线和大规模线程并行的设计，其构架与LB方法算法特点天然契合。目前，LB方法基于GPU的加速计算研究已取得一定进展。文献[13]通过GPU计算平台成功模拟了2D溃坝波并实现了较高加速比。然而，基于GPU架构，并应用SPFS-LB模型模拟水利工程中大尺度3D水波运动方面的研究还罕有报道，本文即进行此方面的探索。
+   本文引入SPFS-LB模型，并结合大涡模拟（LES）方法，在GPU平台并行实现，以其模拟LS-FS流动问题。证明了本文新方法可以准确高效的模拟LS-FS实际工程问题。
+   
+2. 数学模型
+2.1 格子Boltzmann方法
+　　格子Boltzmann方法（Lattice Boltzmann Method, LB方法）将所模拟流体的粒子运动离散在若干个固定方向上，方向i的离散速度以ei表示。通过求解和统计不同离散速度对应的粒子分布函数fi来得到流体的宏观运动状态，如密度、动量。
+　　以通用的3维19速模型（D3Q19）为例，带有MRT碰撞项的LB方程可以描述为：
+(2-1)
+其中是关于位置和时间的离散分布函数；为作用力项；是分布函数的矩（详见文献[14]）。、转换矩阵以及分布函数的关系可以表示为：
+                              (2-2)
+对角碰撞矩阵可以表示为：
+
+本文中取值：，，, ,。 其中为运动粘度。
+2.2 单相自由水面格子Boltzmann模型
+　　SPFS-LB模型基于如下假设：1）忽略气体运动对液体的作用；2）液体状态改变后气体能立刻达到平衡状态；3）液体和气体之间由界面格点隔开。SPFS-LB模型将计算格点分为了流体格点、界面格点和空格点。其中流体格点完全被液体充满，其分布函数的演化过程与常规单相LB方法相同。界面格点只包含部分液体，而空格点内不包含液体，也无需定义任何物理量，如图1所示。流体格点、界面格点和空格点均定义了体积分数，其中和分别是格点的质量和密度，其取值分别为1，0~1和0。
+
+图1 SPFS-LB模型计算格点类型示意
+Fig.1 Cell types of SPFS-LB method
+2.2.1 质量流计算
+   SPFS-LB模型对格点计算流入、流出质量来更新其体积分数，再判断所在区间来更改格点类型，从而实现自由界面的移动。LB方法中质量流可以简单地通过相反方向的分布函数fi和finv(i)求得，其中einv(i)= -ei，表示沿格子速度方向的质量变化量[11]：
+ (2-3)
+相应的，位置x处的界面格点可由式(2-4)更新质量。可以证明上述格点质量的更新计算满足质量守恒定律[11]
+                  (2-4)
+
+2.2.2界面格点分布函数重构
+　　流体格点周围总存在其他流体格点或界面格点，因此能够正常地迁移和碰撞。而界面格点周围总存在空格点，迁移后需要根据宏观边界条件对其分布函数进行重构。根据假定2，界面格点未知分布函数的重构可由式(2-6)实现[11]：
+   	         (2-6)
+其中，和u分别为位置x处的压力和速度。此外，为了平衡界面格点的分布函数，来自交界面切面以外的分布函数均要进行重构，即离散速度方向满足的分布函数[11]，其中为界面法向向量，在LB方法中可由中心差分法计算得到。
+2.2.3质量分配
+　　界面格点体积分数更新后，若判断，则该界面格点过满，需转换为流体格点，并将溢出质量分配到周围的非流体格点中。相应的，相邻的空格点得到质量而转变为界面格点，其宏观密度和速度由周围非空格点进行平均得到，其分布函数可根据式(2-2)初始化。若更新后的界面格点，则转变为空格点，其过空的质量也由相邻非空格点补足为0，同时相邻的流体格点转变为界面格点。
+	过满或过空的界面格点分配剩余质量时，应以分配方向与界面法线方向的点积作为权重进行，如位于处的界面格点分配至处格点的质量为[11]：
+   	            (2-7)
+其中、、。
+　　随着质量分配的完成和格点类型的转换，界面也相应发生了移动，数值模型即可以进行下一阶段的计算。
+　　
+2.3基于大涡模拟的湍流模拟方法
+　　水利工程中的流动多为湍流，需要在数值模型中引入湍流模拟方法。本文引入基于亚格子尺度模型的LES方法。该方法将包括脉动运动在内的湍流瞬时运动通过某种滤波方法分解成大尺度运动和小尺度运动两部分。大尺度量通过数值求解运动微分方程直接计算出来，小尺度运动建立模型，通过在运动方程中亚格子应力对大尺度产生作用。
+　　对于LES，其粘性可以理解为，其中和分别表示分子粘性和湍流粘性（或称涡粘性），而其湍流粘性可以表示为，其中、和分别为模型参数、滤波器宽度和应变率张量，S能够通过分布函数非平衡态部分的二阶矩求得[15]。
+3. GPU并行实现关键技术
+　　本文在nVidia公司推出的通用计算GPU编程架构CUDA(Compute Unified Device Architecture)上实现并行计算。程序设计时，需要针对SFPS-LB模型的算法特点，进行合理的资源分配、恰当的任务划分和灵活的边界处理，以最大限度发挥GPU的计算能力，下面将本文的并行计算实现方法作简要介绍（程序结构见图2）：
+（1）在主机端为包括分布函数、宏观量、指标函数等在内的变量开辟存储空间；（2）根据模拟的流动问题初始化所定义的变量；
+（3）通过cudaMalloc()函数在设备端为变量开辟存储空间，并由cudaMemcpy( , , ,cudaMemcpyHostToDevice)函数将主机端数据导入设备端，此时建议在设备端对同一变量开辟两组存储空间以防止其读写冲突；
+（4）根据计算网格数，通过dim threads()和dim3 grid()进行合理的线程分配和计算分区划分；
+（5）设置迭代循环，通过设备端内核函数依次执行计算模型的各部分算法，在需要同步线程的算法处添加__syncthreads()命令；
+（6）循环结束后通过cudaMemcpy( , , ,cudaMemcpyDeviceToHost)将设备端计算结果导入到主机端，并由cudaFree()命令释放设备端存储空间；
+（7）主机端计算结果的输出及后处理。
+
+图2 SPFS-LB模型CUDA并行实现框架
+Fig.2 Parallel program of SPFS-LB model based on CUDA
+
+4. 算例分析
+   本节应用SPFS-LB模型尝试对坝体完全或部分溃决这两种流动现象进行模拟，将模拟结果与解析解和文献中高精度模拟结果进行对比分析，证明本文模型可以准确模拟大尺度自由水面问题，而且较传统1D及2D方法可以反映用更多丰富的水动力信息。模拟中，重力加速度、水的密度和粘度分别设为g=9.8m/s2、和。
+4.1 坝体完全溃决流动
+　　设等宽、无摩阻且底坡为0的河道长2000m，坝址处于河道中点，上游水库水深H=10m。本文分别模拟了下游水深h=5m和1.75m两种工况下的溃坝波水面线，并与解析值[16]进行对比验证。
+	模拟网格为10000×50（Δx=0.2m），计算区域的左、右、下边界均为滑移固壁边界，水面为自由液面。图3为瞬间溃坝60s后，本文模拟的溃坝涌波水面线与文献[16]中解析公式计算结果的对比。
+　　瞬间溃坝60s后，SPFS-LB模型与Stocker解析公式计算得到的溃坝波波形基本一致，特别是涌波似稳定区水平段、单一波动区下降段的水面线吻合的较好，说明本文模型对溃坝涌波具有较好的捕捉能力，能够较准确的计算出溃坝波的传播速度和演进状态。但在水面突变处，本文模拟结果与解析解略有不同，说明本文方法捕捉激波的能力略显不足。
+
+
+(a) h = 1.75m                          (b) h = 5m
+图3 一维溃坝波水面线（瞬间溃坝60s时）
+Fig.3 Water surface profile of 1-D dam-break wave (60s after dam failure)
+　　
+4.2 坝体部分溃决流动
+　　水库上下游设定为长、宽均200m的平底渠道。坝址位于渠道中央（X = 0m），溃口位于坝体第95m到170m区域（Y = 95~170m，见图4）。初始时溃口上、下游水深分别为H=10m和h=5m。
+   本例计算网格为384×384×19（Δx=0.52m），所有边壁均设定为无滑移固壁边界条件，坝体厚度为两个网格长度。模拟得到瞬间溃坝发生t=10.1s时，溃坝涌波水面如图4所示；t=1.5s、6s、12s时流速分布和流线如图5所示。
+
+
+图4 坝体部分溃决涌波水面(t = 10.1s)
+Fig.4 Water surface of partial dam-break wave at t = 10.1s
+
+　　大坝的局部溃口瞬间出现后，会产生一个向上游传播的负涌波和一个向下游传播的正涌波，且涌波以弧形推进。大坝上游，两侧的水流涌向溃口，使得水面呈现"漏斗"状，"漏斗"范围随着时间的推移而不断扩大并向上游移动。溃口下游，正涌波在溃口两端产生回流并形成立轴漩涡。以上模拟结果与目前对坝体部分溃决流动问题的认识是一致的。图6对比了SPFS-LB模型与浅水模型的计算结果。本文模拟的溃坝波波前位置、波面形状与文献[13]大致吻合，说明SPFS-LB模型可以准确地捕捉坝体部分溃决流动的产生、发展过程。
+
+
+(a) t = 1.5s                 (b) t = 6.0s                 (c) t = 12.0s        
+图5 坝体部分溃决涌波流速分布
+Fig.5 Velocity of partial dam-break flows
+　　
+　　除平面形态外，SPFS-LB模型还模拟出了溃坝波的垂向流动信息，如图5所示。溃坝发生初期，溃口底层水体在表层跌落水流的剪切作用下将会形成一个平行于坝体的卧轴漩涡，直到溃口底部形成稳定均匀的流动后，卧轴漩涡消失。t = 6s后，随着正涌波的传播和反射，溃口两端先后各产生了一个立轴漩涡。
+
+图6 t = 10.1s溃坝波等高线图
+Fig.6 Contour of partial dam-break flows at t = 10.1s
+4.3. 非等高河床上的溃坝水流模拟
+	参照Kao等人的实验资料[17]，应用验证后的SPFS-LB模型模拟非等高河床上的溃坝水流。模拟体型见图7，水库上下游总长38m，坝体距上游边界15.5m，坝体下游10m为高0.4m的三角台阶，坝前水深0.75m，三角台阶下游水深为0.15m。与实验资料相同，沿水槽中轴线设置4个水深监测点，分别距上游闸门4、10、13和20m。本文计算网格为2304×61×61（Δx = 0.016m，网格量857万），模型中固壁均为设为无滑移边界条件。模拟得到瞬间溃坝发生t = 9.7s后，溃坝后水流水面、流场及其与文献[17]计算对比见图8，图9为本文模拟与文献[17]实验结果中测点水深随时间变化过程对比。
+
+图7非等高河床溃坝流动示意图
+Fig.7 Sketch of dam-break flow over a triangular step
+
+　　根据模拟结果可知，瞬间溃坝1.2s后，溃坝波即到达P1测点。溃坝波的演进过程中，流速在截面上大致成抛物面分布。t = 2.4s时溃坝波到达P2并开始爬上斜坡，部分反射的水波向上游传播到P1测点，使得t = 4.8s时P1的水位发生了微小的扰动。t = 4.1s后翻过台阶的水流受底坡作用而快速冲下形成急流，并通过水跃过渡至台阶后的水体，此过程冲起的波浪于t = 7.1s时达到P4。t = 8.3s、9.8s和13.1s时，受台阶或壁面反射回的涌波波前相继到达P2、P4和P1，使其水位分别陡升至约0.60m、0.48m和0.52m。
+
+图8 t = 9.7s溃坝波水面和流速分布
+Fig.8 Water surface and velocity profile of dam-break flows at t = 9.7s
+
+	本文模拟得到的测点水位变化过程、t= 9.7s溃坝波水面形态与文献[17]试验资料以及二维模拟结果吻合较好。对于涌波到达测点时水位的陡升，以及涌波离开测点时水位的缓降，本文模拟结果明显优于文献[17]的计算结果，原因在于2D浅水方程无法有效模拟水流的垂向流动状态。
+
+图9 测点水位变化过程
+Fig.9 Water surface time series of measuring point
+5. 实际拱坝泄洪模拟
+5.1 水流条件分析
+　　最后，本文模拟了某实际拱坝表孔泄洪现象。该拱坝泄水建筑物为弧形布置于坝顶的三个10m宽、14.5m高的表孔，表孔底部为WES实用堰，堰面顶部和尾部高程分别为442m和438m。表孔之间为上游宽6.53m、下游宽2m的变宽度中墩。本例计算网格为384×512×192，模拟了空间尺度100m×133m ×50m内的流动现象（Δx = 0.26m，网格量3775万）。 计算域内，水库端设定为固定水位边界条件；拱坝下游河道出口端为自由出流边界条件；其余（包括拱坝、河床、山壁表面）设定为非滑移固壁边界条件。模拟得到的流速分布见图10，断面流速分布见图11。
+
+
+图10 拱坝泄洪流速分布（水库水位450m）
+Fig.10 Water surface and velocity of flood discharge of arch dam
+(reservoir water level: 450m)
+	
+　　根据模拟结果，上游库水流经拱坝表孔后，形成水舌并自由跌落至下游河道。重力作用下，水舌在跌落过程中速度不断增加、形态发生扩散并掺入气体。在入水时与下游河道内的水流发生碰撞，最大局部速度达到25m/s。坝下河道内的水流因下泄水舌的冲击而强烈翻滚，并不断卷入气体，水面发生随机性波动，跌落区下游主流流速达到15m/s。本文成功模拟出了高速水流的冲击、破碎和融合过程，反映了表孔泄流时水流结构的强三维运动特征，具有一定的数值模拟难度。
+
+图11 拱坝泄洪纵剖面流体体积分数（水库水位450m）
+Fig.11 Fluid volume fraction of vertical section (reservoir water level: 450m)
+
+　　本文模拟了水库水位为445m、450m和455m情况下的拱坝泄流现象，其表孔溢流堰的流量系数与文献[18]根据实验成果给出的（考虑侧收缩、上游堰面垂直、高堰等因素）流量系数对比于表1。两者相近的数值大小和一致性的变化规律表明，SPFS-LB模型可用于模拟工程中大尺度三维复杂流动问题，并为有关工程设计提供依据。
+　　表1 表孔溢流堰流量系数对比
+　　Tab.1 Comparison of the discharge coefficients between 
+　　the simulated results and reference [21]
+　水库水位(m)445450455文献[18]成果侧收缩系数0.9580.9290.889H/Hd0.3070.8201.332流量系数0.4190.4870.530本文模拟成果流量系数0.4020.4770.543 相对误差（%）4.1%2.1%2.6%注：H = 水库水位-442，为堰上工作水头；Hd为设计水头，根据设计资料取9.76m。
+
+5.2 并行计算分析
+	本节分别使用优化后的GPU并行程序和CPU串行程序，以不同网格密度计算上述拱坝泄流问题，得到并行程序相对串行程序的加速比。其中GPU并行程序在CUDA6.5平台上实现，通过单块nVidia GeForce GTX Titan X显卡（12G DDR5显存、3072个主频1.1GHz的流处理器）对程序内核函数进行迭代计算，并以戴尔Precision 3620主机（16G DDR3内存、英特尔i7-6700k CPU）辅助程序的循环、判断以及计算文件的读入、输出；而CPU串行程序在VS2010上使用C++实现，所用设备为戴尔Precision 3620主机。
+　　表2和图12比较了三套网格下GPU并行程序与CPU串行程序进行双精度运算时每秒可更新的百万网格数(Million Lattice node Updates Per Second，MLUPS)及其二者加速比（GPU结果相对CPU结果）。表2第一列为计算网格数，GPU列中的表头代表每个线程块指定的线程数。表中括号前和括号中的数字分别为MLUPS和加速比。
+　　表2 GPU、CPU每秒计算网格数和加速比
+　　Tab.2 MLUPS and speedup of GPU and CPU
+格点数GPUCPU     128256512MLUPS96×128×4841.19(33.48)51.26(41.67)59.00(47.96)1.23192×256×9640.92(33.82)52.00(42.98)60.03(49.61)1.21384×512×19241.31(33.86)52.82(43.30)60.92(49.93)1.22
+　　分析可知，GPU程序的计算能力随着线程块中线程数的增加而增加，这与GTX Titan X显卡的硬件特征和CUDA指令加载方式有关。当GPU进行并行计算的线程数目越多，每个流处理器即能获得更多的活跃线程块，当线程块中的线程束都挂起时，流处理器即刻可以行下一线程块中线程束的计算，通过隐藏延时的方式提高了运算效率。线程块中线程数足够多时，高效的共享内存通道可以得到充分利用以提高计算效率。因此，当线程数分配合理时，GPU程序可以相对于CPU程序最高实现约50倍的加速比（见表2及图12）。即模拟本节拱坝泄流10s的流动现象（大尺度自由水面流动问题，网格量3775万），使用GPU仅需运算22.7个小时，而CPU串行程序需要计算约47天，这体现处本文实现方法的高效性。
+
+图12 线程块不同线程数下GPU计算能力
+Fig.12 MLUPS of GPU with different thread number 
+8. 结论与展望
+	本文将SPFS-LB模型与大涡模拟方法相结合，并通过GPU实现模型的大规模并行计算，尝试对水利工程中大尺度自由水面流动问题进行准确、高效的模拟。
+　　首先，本文模拟了水坝完全及部分溃决过程，所得结果分别与解析解及高精度模拟结果进行对比，验证了本文模型的准确性。其次，本文通过GPU平台实现了非等高河床上坝体溃决模拟的并行计算，所得测点水面波动过程与实验资料一致。最后，本文模拟了实际工程中的拱坝泄洪现象，所得泄流系数与经验公式计算结果一致，说明了本文方法模拟实际工程问题的有效性。基于GPU平台的大规模并行计算可以充分发挥LB方法数据耦合度低的优势，使计算效率得到数十倍的提升。
+　　本文实现了对实际物理问题准确、高效的模拟。后续工作中会将流固耦合、传温传质等数学模型补充至该模型，并开发新模型在GPU平台的运行算法，以实现对天然水体中滑坡涌浪、水温分层、污染扩散等实际工程问题准确高效的分析。
+
+参考文献
+[1] Heinrich P. Nonlinear Water Waves Generated by Submarine and Aerial Landslides [J]. Journal of Waterway Port Coastal & Ocean Engineering, 1992, 118(3):249-266.
+[2] 蔡芳, 程永光, 张晓曦. 保证调压室水位波动三维CFD模拟准确性的方法[J]. 武汉大学学报(工学版), 2016, 49(3):390-396.
+[3] Machiels O, Pirotton M, Pierre A, et al. Experimental parametric study and design of Piano Key Weirs[J]. Journal of Hydraulic Research, 2014, 52(3):326-335. 
+[4] 张新华, 隆文非, 谢和平,等. 二维浅水波模型在洪水淹没过程中的模拟研究[J]. 四川大学学报工程科学版, 2006, 38(1):20-25.
+[5] 潘军峰, 冯民权, 郑邦民,等. 丁坝绕流及局部冲刷坑二维数值模拟[J]. 四川大学学报工程科学版, 2005, 37(1):15-18. 
+[6] HieuPhung Dang, Katsutoshi Tanimoto, Ca Vu Thanh. Numerical simulation of breaking waves using a two-phase flow model[J]. Applied Mathematical modelling, 2004, 28: 983-1005
+[7] Hirt C W, Nichols B D. Volume of fluid (VOF) method for the dynamics of free boundaries [J]. Journal of Computational Physics, 1981, 39(1):201-225.
+[8] Sussman M, Smereka P, Osher S. A level set approach for computing solutions to incompressible two-phase flow[J]. Journal of Computational Physics, 1994, 114(1):146-159.
+[9] Harlow F H, Welch J E. Numerical Calculation of Time-Dependent Viscous Incompressible Flow of Fluid with Free Surface[J]. Physics of Fluids, 1965, 8(12):2182-2189.
+[10] Thürey N. A single-phase free-surface Lattice Boltzmann Method[J]. Comptes Rendus Mecanique, 2003, 335:295-303.
+[11] K?rner C., Thies M., Hofmann T., et al. Lattice Boltzmann Model for Free Surface Flow for Modeling Foaming[J]. Journal of Statistical Physics, 2005, 121(1):179-196.
+[12] Aidun CK, Clausen JR. Lattice-Boltzmann method for complex flows. Annual Review of Fluid Mechanics 2010; 42:439-472.
+[13] 张春泽, 程永光, 李勇昌. 二维浅水波方程格子 Boltzmann 算法的 GPU 并行实现[J]. 水动力学研究与进展: A 辑, 2011, 26(2): 194-200.
+[14]Lallemand P, Luo L S. Theory of the lattice boltzmann method: dispersion, dissipation, isotropy, galilean invariance, and stability[J]. Physical Review E Statistical Physics Plasmas Fluids & Related Interdisciplinary Topics, 2000, 61(61):6546-6562.
+[15] Hou S, Sterling J, Chen S, Doolen GD. A lattice Boltzmann sub-grid model for high Reynolds number flows. In: Lawniczak AT, Kapral R, editors. Pattern formation and lattice gas automata. Fields InstCommu, 1996. 6: 151-66.
+[16] Stocker J J. Water waves[J]. Pure and Applied Mathematics, 1957, 9: 291-314.
+[17] Zhou J G, Causon D M, Mingham C G, et al. Numerical Prediction of Dam-Break Flows in General Geometries with Complex Bed Topography[J]. Journal of Hydraulic Engineering, 2004, 130(4):332-340.
+[18] 赵昕,张晓元，赵明登，等.水力学[M].中国电力出版社, 2009.

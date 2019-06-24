@@ -1,0 +1,223 @@
+﻿
+蓝牙手柄
+产品说明书(PG-9037)中文版
+适用说明：
+1.	非常感谢您购买ipega公司开发生产的蓝牙游戏手柄；
+2.	产品主要适用于在Android/iOS/MAC OSX/Win XP/7/8/10系统上蓝牙连接时，进行游戏操作时使用！
+3.	适用设备:智能手机/平板电脑/智能电视机、机顶盒/PC电脑(Windows和MAC OSX系统均支持)；
+4.	结构符合人体工程学，手感舒适!
+★因官方游戏平台软件升级或源代码变更等不可抗拒的因素造成部分游戏无法与本产品连接操作， 我公司不负任何责任。对此我公司保留最终解释权。
+如还未下载手机游戏厅，请输入下方 
+网址或扫描右方二维码选择下载
+ https://pan.baidu.eom/s/1hsi75FA
+ 技术支持QQ群：144981572
+ 客服电话：400-806-3006 
+在线时间：周一至周五9:30-17:30
+
+
+安卓游戏平台下载二维码
+艾派格官方微信公众号
+功能按键图示：
+
+USB接口
+
+L1/L2键
+
+ HOME键
+
+左3D摇杆及下压L3键
+
+ SELECT键
+
+十字方向键
+
+充电指示灯
+
+R1/R2键 
+
+START键
+
+A/B/X/Y功能键 
+
+右3D摇杆及下压R3键
+
+模式指示灯
+
+
+
+电性参数：
+1.	工作电压：DC3.7V
+2.	工作电流：30 mA
+3.	持续使用时:10H
+4.	静态电流：<35uA
+5.	充电电压/电流：DC5V/500mA
+6.	蓝牙传输距离：≤8M
+7.	电池容量：300mAh
+8.	待机时间：满电放置30天
+
+操作使用模式：
+
+Android 系统
+
+HID模式(GamePad)
+键盘模式
+鼠标模式
+模式配对 
+(长按2秒）
+X+Home
+A+Home
+Y+Home
+指示灯
+LED1
+LED2
+LED1或LED2
+备 注
+在HID或键盘模式下均可动态切换成鼠标模式
+
+iOS系统
+Windows系统
+
+iCade模式
+X_Keyboard模式
+HID模式(GamePad)
+模式配对
+(长按2秒)
+B+Home
+Y+Home
+X+Home
+指示灯
+LED3
+LED4
+LED1
+备 注
+默认为键盘英文输入法
+支持iOS非越狱设备
+需蓝牙适配器
+
+安卓设备使用说明:
+支持绝大多数游戏大作，如:暗影之枪;/现代战争5/狂野飙车/魂斗罗/合金弹头等和模拟器游戏（如 MC4,Wild blood,Dungeon Hunter,Zombie,FC模拟器,GBA模拟器，街机模拟器,SFC模拟器,N64 模 拟器，Shadowgun,Sonic CD，Cordy，soulcraft，Zenonia4,9 Innings 2013,Riptide GP等)，或者 手机扫描二维码下载安卓游戏大厅，进入游戏大厅下载所需要的游戏。
+1.	同时按住X键和HOME键2秒，此时LED1指示灯快闪；图1
+2.	将Android设备端的蓝牙功能打开,点击“扫描”
+3.	当搜索到蓝牙名为“PG-9037”的设备名时，选择配对连接；图2
+4.	连接成功，LED1指示灯常亮！图3
+5.	进入游戏(游戏厅或模拟器下载的游戏可以直接玩）
+6.推荐游戏：
+1.	CF(穿越火线）
+2.	死亡扳机2
+3.	暗影之枪
+4.	现代战争5
+5.	王者荣耀
+6.	使命召唤：突击队
+7.	死亡效应
+图 1
+
+图2
+
+图3
+
+iOS设备X_Keyboard模式
+X_Keyboard模式(支持iOS非越狱设备，支持第三方购买的游戏平台在相关手机游戏厅或模拟器下载的游戏同样 支持，如新游游戏厅和hand joy)(仅限中国大陆地区）
+1.同时按Y键和HOME键2秒，此时LED4指示灯快闪；图1
+2.将iOS设备端的蓝牙功能打开，当搜索到蓝牙名为“Newgamepad N1”的设备名时，选择配对连接；图2
+3.连接成功，LED4指示灯常亮！图3
+4.手机扫描二维码下载游戏平台，进入平台下载所需要的游戏。
+图1
+
+
+
+图3
+
+图2
+
+
+
+iOS设备iCade模式
+支持iOS非越狱设备,可以使用苹果商店内“APPStore”下载的游戏，当在“APPStore” 内搜索“iCade”时，会弹出海量的游戏并可以操作；
+1.	需将键盘输入法设为英文输入，才能正常操作游戏；图1
+2.	同时按住B键和HOME键2秒，此时LED3指示灯快闪；图2
+3.	将iOS设备端的蓝牙功能打开，当搜索到蓝牙名为“PG-9037”的设备名时，选择配对连接；图3
+4.	连接成功，LED3指示灯常亮！图4
+
+
+图2
+
+图1
+
+图4
+
+图3
+
+iCade模式下支持的部份游戏：
+Temple Run - Imangi Studios, LLC
+Super Mega Worm Lite - Deceased Pixel LLC
+Emerald Mine - Les Bird
+HungryMaster - xionchannel
+Jungool - Headsoft
+Akane the Kunoichi Lite - Haruneko
+Rush City - Acceleroto
+lron Frost-YOMEN,Inc.
+Guns n'Bottles - Ivanovich Games 
+Danmaku Unlimited 2 lite - Bullet Hell Shump
+ Recess Riot - Deceased Pixel LLC
+ qub - Andrew Brinkhaus 
+Alien Annihilation-Free retro - space shooter
+Heli Apps
+Bullet Hell Infinite - Nicolas Bevillard
+ Retro Dust-Classic Arcade - Asteroids Vs
+ Invaders 
+Rl Productions
+J-Werewolf LITE - Daniel Novais
+ Recess Riot Lite - Deceased Pixel LLC
+ Space Inversion FREE - merlyn lear
+ Vector Star Brawl - Jorge Arroyo 
+The Invaders - RI Productions
+ Towerman - Tomek Szczepanski 
+Bunny Leap - John Carlyle
+
+
+iOS按键映射功能：
+1.	支持iOS第三方游戏平台，如需要更改按 键功能，在游戏厅内操作手柄即可更改；
+2.	新游游戏厅映射方法：同时按L3+SELECT 组合键调出映射功能；
+3.	Hand Joy游戏厅映射方法:同时按 START+SELECT组合键调出映射菜单；
+4.	将需要映射的按键，拖到相应的触摸功能 键上与之重叠保存后即可操作游戏！
+
+调出触摸键盘：
+1.iOS系统：在XJKeyboard模式连接状态下，同时按 R3+SELECT组合键，可以调出触摸键盘界面；方便 在游戏中输入文字和字符;(仅限新游）
+
+有线连接PC设备的操作方法：
+1.	需用USB数据线将手柄和PC设备的USB接口 相连，WIN7以上系统默认连接OK后，指示灯常 亮，表示为X-INPUT的操作模式；
+2.	X-INPUT有线模式下支持绝大多数PC版的经 典大型游戏的操作!如:极品飞车/暗影之枪/街霸5/现代战争5/死亡扳机
+
+蓝牙连接PC设备操作方法
+1.	关机状态下，同时按住手柄HOME+X键搜索蓝牙设备；
+2.	将蓝牙2.1接收器插入PC设备的USB接口;Windows系统会自动安装驱动程序；
+2.1驱动程序安装成功后，会在电脑的右下角显示蓝牙设备的符号;如下图1：
+2.2将鼠标移动在蓝牙符号处，单击鼠标右键，选择“添加设备”；如下图2：
+2.3选择“添加设备”后，会在对话框内搜索到设备的型号(PG-9037)图标；如下图3:
+2.4点击“下一步”，并选择“不使用代码进行配对”，确认后则会自动添加，提示蓝牙连接成功！ 连接OK后，指示灯常亮！如下图4:
+2.5蓝牙连接成功后为D_INPUT模式;在D_INPUT模式下，支持以模拟器方式运行的游戏！
+
+图1
+
+
+图2
+
+图3
+图4
+
+
+
+手柄充电/休眠/唤醒功能：
+1.	充电时侧面LED指示灯常亮，充饱后熄灭！
+2.	睡眠/唤醒功能：游戏手柄在5分钟内不使用会进 入休眠状态，当需要重新使用时需按HOME键唤 醒即可回连；
+3.	电池电量不足时侧面LED指示灯快闪提示；
+
+
+注意事项
+1.	请不要把本产品放在潮湿或高温地方存储；
+2.	不要敲击、摔打、棒打、刺穿、或试图去分解本产品，以免对产品造成不必要的损害；
+3.	产品内置电池，请勿和垃圾一起丢弃；
+4.	不要在靠近火或其它热源的地方对手柄进行充电。
+5.	非专业人员请勿拆卸本产品，否则不在售后保修服务内；
+iPega与ePega商标同属于PEGA LIMITED所有.
+专利号：ZL2014302714740

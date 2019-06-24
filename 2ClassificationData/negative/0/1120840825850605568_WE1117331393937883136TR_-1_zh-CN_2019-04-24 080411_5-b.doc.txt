@@ -1,0 +1,118 @@
+﻿第 期	     刘春晓，等：图像视频细节增强的色调优化方法	2
+图像视频细节增强的色调优化方法
+刘春晓
+（浙江工商大学 计算机与信息工程学院，浙江 杭州 310018）
+
+摘 要：针对已有的细节增强方法难以保持输入图像帧的色调分布的缺点，提出了一种基于色调优化的图像视频细节增强算法。首先，为了避免颜色通道的相关性所带来的偏色现象并提高算法效率，将输入图像进行颜色空间的转换，并提取亮度信息。然后，采用基于局部极值的边缘保持图像滤波方法，快速地将输入图像分解成含有大尺度边缘信息的基图像和含有小尺度细节信息的细节层图像。最后，在用户期望的细节增强系数和输入图像的颜色场的约束下，基于梯度域上能量优化的细节增强算法避免了细节增强图像与输入图像之间的显著色调差异。实验结果表明：对于任意输入的图像帧，本文算法不但能够显著地增强其中的细节内容，而且能够有效地保持原有的色调分布，显得更加真实生动。它基本满足科学观察、视频监控和数字视觉特效等领域的技术要求，具有巨大的应用潜力。
+关键词：细节增强；多尺度图像分解；局部极值；色调优化；梯度域
+中图分类号：TP394.1；TH691.9          文献标识码：A
+Image and video detail enhancement via tone optimization method
+LIU Chun-Xiao
+
+（College of Computer & Information Engineering, Zhejiang Gongshang University, Hangzhou 310018, China）
+
+Abstract: In order to deal with the tone discrepancy between the input image and the detail enhanced image existed in the state-of-the-art methods, we present a tone optimization based image and video detail enhancement algorithm. First, we extract the intensity information by color space conversion to avoid the color distortion problem resulted from the correlation of the color channels and improve the efficiency. Then, edge-preserving image filtering based on local extreme is carried out to quickly divide the input frame into a base image which contains the coarse-scale information, and the detail layers which contain the fine-scale information. Finally, under the constraints of the user-specified detail magnification factors and the color fields of the input image, a gradient domain energy optimization based detail enhancement algorithm is proposed to eliminate the distinct tonal differences between the enhanced image and the input image. Experimental results show that our algorithm can obtain wonderful detail enhancement effects with the tone preserving characteristics for the arbitrary input images. It can satisfy the technical requirements and shows great application potentials in scientific investigation, visual surveillance and special visual effects, etc.
+Key words: Detail enhancement; Multi-scale image decomposition; Local extreme; Tone optimization; Gradient domain
+
+3
+1 引言
+在图像视频的获取过程中，由于受到采集环境和采集设备等因素的限制，仅仅能够得到由粗到细尺度上清晰度逐渐降低的层次分明的画面。然而，在某些情况下，需要将画面中隐含的细节信息准确地凸显出来，以便于肉眼分辨，这就是图像视频的细节增强技术所追求的研究目标。它是图像视频处理、计算机视觉和计算机图形学等交叉学科的重要研究内容之一，在科学观察、视频监控、数字特效和虚拟现实等领域具有重大的应用价值。
+图像细节增强算法的一般处理步骤是首先将图像分解成一个反映低频信息的基图像和一个或多个反映多尺度高频信息的细节层，然后对每个细节层进行放大操作获得增强的细节层，最后将基图像和增强的细节层合成起来，即可获得最后的图像细节增强效果。近年来涌现出不少图像视频细节增强方面的研究工作。对于多幅不同光照条件下的输入图像，Fattal等人[1]采用快速双边滤波进行多尺度图像分解，然后通过多尺度细节层的重组来构造增强图像。但是，双边滤波本质上是在保留边缘程度和平滑程度上做一个权衡。如果增强提取细节的程度，残留在细节层中的大尺度边缘将会导致过增强，并最终引起梯度逆转现象和光环现象。Zheng等人[2]则通过求解一个梯度域最优化问题来得到一张细节辅助图，并最终通过二次滤波得到细节层和基础层。但是，他们的方法都是基于多幅输入图像，无疑限制了这些方法的应用场合。
+对于单幅输入图像，Farbman等人[3]展示了基于加权最小二乘法进行图像细节增强的效果，但是该方法需要求解一个大型的稀疏线性系统，因此响应速度上的瓶颈造成了一定的局限。Fattal[4]提出了基于避免边缘的提升小波分解进行图像细节增强的方法。这种多尺度分解方法虽然速度比较快，但是它的模糊核大小只能取2的指数级，从而限制了滤波尺度的选取。后来，Subr等人[5]提出了新的细节定义，认为图像的细节是局部极小值与局部极大值之间的震动，并且基于这种新的定义方式，提出了新的图像分解技术。最近，Xu等人[6]提出了一种基于L0梯度最小化的图像平滑框架，通过控制全局非零梯度的数量来达到图像平滑的目的。Paris等人[7]利用拉普拉斯金字塔进行图像的多尺度分解。Gastal等人[8]提出了一种基于域变换的彩色图像细节增强方法，期望达到快速多尺度分解的目的。
+总之，已有的图像视频细节增强方法大多关注多尺度图像分解方法中的边缘保持滤波算法，这在一定程度上避免了大尺度边缘的过增强所导致的梯度逆转和光环现象。然而，对于细节增强过程中所导致的色调偏移现象却极少有人问津。基于已有的边缘保持的多尺度图像分解方法，本文提出了一个基于色调优化的图像视频细节增强算法，既能保持输入图像帧的颜色分布，又能保证良好的细节增强效果。
+
+图1算法流程图
+Fig.1 Flowchart of our algorithm
+2 图像视频细节增强的色调优化方法
+除了增强图像帧的细节信息之外，有效的彩色图像细节增强算法还必须使得细节增强图像更加生动，避免颜色失真。考虑到RGB颜色空间中三基色之间的相关性，单独对每个通道进行滤波操作必然会导致色彩失真，因此本文对输入图像进行RGB到YIQ颜色空间的转换，然后仅在亮度通道Y上进行图像帧的细节增强处理。
+对于任意的输入图像帧，本文的细节增强算法主要包括以下步骤：首先，通过颜色空间的转换，提取输入图像帧中的亮度信息。然后，采用基于局部极值的图像滤波方法将图像多尺度地分解成含有大尺度边缘信息的基图像和多幅含有小尺度细节信息的细节层图像。最后，在用户输入的细节增强系数和输入图像的颜色场约束下，我们提出基于梯度域上能量优化的细节增强算法来得到色调保持的细节增强结果。本文算法的流程图如图1所示。
+
+
+（a）输入图像信号
+（b）局部极值提取
+(a) input image signal
+(b) local extremes extraction
+
+
+（c）包络面计算
+（d）包络面平均
+(c) envelopes computation
+(d) envelopes average
+图2基于局部极值的图像滤波
+Fig.2 Local extreme based image filtering
+2.1 基于局部极值的图像分解
+多尺度图像分解是指将图像分解成一个基础层和一个或多个不同尺度上的细节层，它是一个图像渐进平滑的过程。在此过程中，无论是模糊还是锐化边缘都会在细节层中产生震荡，而这种震荡将是导致图像重组后产生梯度逆转和光环等图像失真现象的原因，因此必须小心操作基础层与细节层的分解。
+在过去的几年里，多种具有边缘保持特性的图像滤波技术在细节增强算法中得到了应用。基于双边滤波[9]和小波分解[4,10,11]的多尺度分解技术是常用的图像分解方法。最近，基于加权最小二乘法（WLS）[3]、梯度平滑[6]和域变换[8]的图像平滑方法也纷纷被提出。然而，由于本文不具体研究图像的多尺度分解方法，只对后续的细节增强过程进行优化，所以多尺度图像分解方法的选择不会影响本文细节增强算法的色调保持性能，唯一的区别在于细节增强的尺度和程度不同。本文采用基于局部极值的图像平滑技术来进行多尺度的图像分解[5]，下面简要叙述其基本思想和实现步骤。
+基于局部极值的图像滤波器将图像细节定义为图像的局部极大值与局部极小值之间的连续振荡。振荡的峰值代表了像素之间的对比度，振荡的空间频率则表示了细节的精细程度。基于局部极值的滤波器的实现步骤如图2所示，它首先定位出原始图像的所有极大值点和极小值点，然后利用插值技术分别构造出极大值包络面和极小值包络面，最后两个极值包络面的平均值就是基础层。利用原图像减去基础层即可得到细节层。
+对于图像局部极值像素的检测，在以像素为中心的邻域内，如果至多有个像素的亮度值比的亮度值大，那么像素就被看作极大值点。类似地，如果至多有个像素的亮度值比的亮度值小，那么像素就被看作极小值点。极值包络面的构建借鉴了Levin等人所提出的插值技术[12]。以构建图像的极大值包络面为例，对于输入图像I中的像素和，如果它们的亮度值和相似，则它们在生成的极值包络面中的值和也要尽可能地接近。即在极值包络面中，像素点的像素值应该与其周围像素点的加权平均像素值最大程度地接近，据此建立目标函数如下
+              (1)
+其中，约束条件为，，为极大值点集合，即如果像素点为极大值点，那么在极大值包络面中的像素值就是原图像中的像素值。表示以像素为中心的邻域，是一个和为1的权重函数，表示像素和的亮度值相似程度，其具体表达式为
+             (2)
+其中为以为中心的邻域内像素亮度的标准差。最后，取极大值和极小值包络面的算术平均值作为输入图像的基础层图像，使用原图像减去基层图像便可以得到了细节层图像。这就完成了对输入图像的一次分解工作。
+为了获得多尺度的细节层图像，需要对图像进行迭代滤波。对输入图像进行一次平滑滤波会得到一个基础层和一个细节层，继续对进行平滑滤波就会得到一个基础层和一个细节层。这样，经过n次迭代平滑滤波就可以得到一系列的细节层和一个平滑程度最高的基础层。
+2.2 基于色调优化的细节增强
+将细节层图像乘以用户输入的细节增强系数得到增强后的细节层图像，再与基础层图像相加便会得到细节增强后的图像，即
+                     (3)
+其中，为细节增强后的图像，为基础层图像，为各细节层图像，为用户指定的各细节层图像的增强系数。由于采用上述方法得到的细节增强图像与输入图像I上同一像素的亮度值已经发生明显的偏移，所以两者之间将存在非常明显的色调分布差异，如图3所示。与输入图像图3（a）相比较，图3（b）中未经色调优化的细节增强图像和图3（d）中Subr等人的细节增强图像明显地整体变暗。
+为了保证信息呈现的客观性和真实性，有效的图像视频细节增强算法必须在突出细节信息的同时保持细节信息周围原有的图像上下文信息，尤其是色调分布信息。在此情况下，采用对比度拉伸或直方图匹配等方法，都难以有效地纠正细节增强图像中的颜色失真现象。基于马尔科夫随机场理论，本文提出了一种可以有效保持输入图像色调分布的基于梯度域上色调优化的图像视频细节增强算法。由于用户输入的细节增强系数对于输入图像来说不一定非常合适，所以本文算法还会对其进行适当的优化调整。
+
+
+
+
+图3细节增强效果比较
+Fig.3 Comparison of detail enhancement effects
+
+在输入图像和用户给定的细节层的增强系数约束下，本文通过图像梯度域上能量优化的方法舍弃上述细节增强图像，寻找最优的细节增强图像，使得该图像一方面尽量保持输入图像的色调分布，另一方面尽量逼近细节增强图像的梯度分布，同时要求优化调整后的细节增强系数尽可能地接近用户给定的期望值。考虑到上述因素，我们定义最小化的能量函数形式如下
+，  (4)
+其中，是在输入图像的亮度场约束下的亮度能量项，它期望新图像与输入图像的亮度分布尽可能地保持一致，可以表示为
+，             (5)
+其中仅仅包含为未知量。
+是在期望的细节增强图像梯度场约束下的梯度能量项，它要求新图像与期望的细节增强图像的梯度分布尽可能保持一致，可以表示为
+，     (6)
+其中，表示像素的梯度，它包含水平和垂直两个方向的梯度值，可以按照下式计算：
+，。
+因此，式(5)可以写成
+。
+由于可以表示为式(3)，仅仅包含多尺度细节层的增强系数作为未知量，所以在梯度能量项式(6)中包含两种未知量，即和。
+是在用户给定的细节层增强系数约束下的增强能量项，它希望优化后的细节增强系数尽可能与用户输入的细节增强系数保持一致，可以表示成
+，             (7)
+其中仅仅包含为未知量。
+为三个能量项的权值，起到能量平衡的作用。假设输入图像的高度为，宽度为，且用户指定了个细节层的增强系数，则本文一般设定，，，式(4)是一个关于个未知变量的二次函数，我们的目标就是将其最小化。通过将式(4)分别对（个未知量）和（个未知量）求偏导数并令其等于零，转化为一个大规模稀疏线性方程组（共个方程）的求解问题，利用高斯塞德尔迭代算法可以快速地得到最优解。
+
+
+图4我们的图像细节增强效果
+Fig.4 Our image detail enhancement effects
+
+4 实验与结果
+在配置为Intel® Core™ i5-2300 CPU、4GB内存的台式机上，以Windows XP下的Visual C++ 6.0为开发环境，实现了以基于色调优化的图像视频细节增强算法为核心的软件系统原型。它对于任意的输入图像帧，通过对用户输入的细节增强系数的优化调整和对细节增强图像帧的优化求解，均能取得很好的细节增强效果。实验结果如图3、图4、图5和图6所示。
+在图3中，本文算法取得了比未经色调优化的细节增强图像图3（b）和Subr等人的细节增强图像[5]图3（d）更好的色调保持的图像细节增强效果图3（c）。
+在图4中，我们与Gastal等人的算法效果[8]进行了比较。不难看出，Gastal等人的方法易于使细节增强图像局部变暗或变亮甚至过曝，本文方法则能够很好的控制图像的亮度分布，使图像的整体色调不发生偏移，因此它对于颜色偏亮的图像仍然可以得到很好的色调保持的细节增强结果。图5展示了更多的由我们的算法所得到的图像细节增强结果。对于任意的输入图像，我们的细节增强算法都明显抑制了光环现象的产生，保持了原图像的色调分布，保证了图像的真实感。
+
+图5我们的图像细节增强效果
+Fig.5 Our image detail enhancement effects
+
+在图6中，我们展示了三个由本文算法得到的细节增强视频序列。这些结果表明本文的图像细节增强算法可以直接应用于平常所拍摄的活动视频上，也都取得了很好的视频细节增强结果。因此，我们的细节增强算法对于图像和视频都是适用的。
+总之，图像视频细节增强的色调优化算法不但在用户输入细节增强系数的约束下凸显了画面中的细节信息，而且在输入图像颜色场的约束下保持了原有的色调分布特征。另外，多尺度图像分解技术的选择不会影响本文算法的色调保持性能，仅仅会在画面细节增强的尺度和强度上稍有差异，因此本文算法适用于已有的边缘保持的多尺度图像分解技术。
+
+
+
+
+5 结论
+本文提出了一种基于色调优化的图像视频细节增强算法。对于任意的输入图像，首先通过颜色空间的转换来提取图像中的亮度信息，然后采用基于局部极值的图像滤波技术快速分解输入图像为一个基图像和多个尺度的细节层图像，最后通过基于色调优化的细节增强算法来获得色调保持的细节凸显效果。实验结果表明：我们的方法不但能够有效地突出画面中的细节信息，而且能够保证细节增强后的图像与输入图像之间色调分布的一致性，满足了信息的保真效果。它基本满足科学观察、视频监控、数字特效和虚拟现实等应用领域的技术要求，具有重大的应用价值和潜力。
+
+
+
+参考文献：
+[1] FATTAL R, AGRAWALA M, RUSINKIEWICZ S. Multiscale shape and detail enhancement from multi-light image collections[J]. ACM Transactions on Graphics, 2007, 26(3): Article 51, 1-9.
+[2] ZHENG J H, LI Z G, YAO S S, YAO W, RAHARDJA S. Photorealistic detail manipulation via multi-light images[C]. Proceedings of the 5th IEEE Conference on Industrial Electronics and Applications, Taichung, TaiWan, China: ICIEA 2010: 409-413.
+[3] FARBMAN Z, FATTAL R, LISCHINSKI D, SZELISKI R. Edge-preserving decompositions for multi-scale tone and detail manipulation[J]. ACM Transactions on Graphics, 2008, 27(3): Article 67, 1-10.
+[4] FATTAL R. Edge-avoiding wavelets and their applications[J]. ACM Transactions on Graphics, 2009, 28(3): Article 22, 1-10.
+[5] SUBR K, SOLER C, DURAND F. Edge-preserving multiscale image decomposition based on local extrema[J]. ACM Transactions on Graphics, 2009, 28(5): Article 147, 1-9.
+[6] XU L, LU C W, XU Y, JIA J Y. Image smoothing via L0 gradient minimization[J]. ACM Transactions on Graphics, 2011, 30(6): Article 174, 1-12.
+[7] PARIS S, HASINOFF S W, KAUTZ J. Local laplacian filters: Edge-aware image processing with a laplacian pyramid[J]. ACM Transactions on Graphics, 2011, 30(4): Article 68, 1-11.
+[8] GASTAL EDUARDO S L, OLIVEIRA MANUEL M. Domain transform for edge-aware image and video processing[J]. ACM Transactions on Graphics, 2011, 30(4): Article 69, 1-12.
+[9] CHEN J, PARIS S, DURAND F. Real-time edge aware image processing with the bilateral grid[J]. ACM Transactions on Graphics, 2007, 26(3): Article 103, 1-9.
+[10] HANIKA J, DAMMERTZ H, LENSCH H. Edge-optimized à-trous wavelets for local contrast enhancement with robust denoising[J]. Computer Graphics Forum, 2011, 30(7): 1879-1886.
+[11] XIAO F, ZHOU M Q, GENG G H. Detail enhancement and noise reduction with true color image edge detection based on wavelet multi-scale[C]. Proceedings of the 2nd International Conference on Artificial Intelligence, Management Science and Electronic Commerce, Zhengzhou, China: AIMSEC 2011: 1061-1064.
+[12] LEVIN A, LISCHINSKI D, WEISS Y. Colorization using optimization[J]. ACM Transactions on Graphics, 2004, 23(3): 689-694.
+

@@ -1,0 +1,237 @@
+﻿
+Classic GamePad
+Instruction Manual(PG-9021)
+适用说明：
+1.	非常感谢您购买ipega公司开发生产的经典蓝牙手柄；
+2.	产品主要适用于在Android/iOS/MAC OSX/Win XP/7/8/10系统上蓝牙连接时，进行游戏操作时使用！
+3.	适用设备:智能手机/平板电脑/智能电视机、机顶盒/PC电脑(Windows和MAC OSX系统均支持）
+4.	安卓和iOS系统均支持多媒体功能键:音量上一曲，播放/暂停,下一曲，音量+;
+★因手机游戏厅或模拟器软件升级及源代码变更等不可抗拒的因素造成部分游戏无法与本产品连接 操作，我公司不负任何责任。对此我公司保留最终解释权。
+如还未下载手机游戏厅，请输入下方
+ 网址或扫描右方二维码选择下载
+ https://pan.baidu.eom/s/1hsi75FA 
+技术支持QQ群：542991037 
+客服电话：400-806-3006 
+在线时间：周一至周五9:30-17:30
+
+
+游戏平台下载二维码
+艾派格官方微信公众号
+
+键位分布：
+
+电性参数：
+
+1.	工作电压：DC3.7V
+2.	工作电流：30 mA
+3.	持续使用时:10H
+4.	静态电流：<35uA
+5.	充电电压/电流：DC5V/≤500mA
+6.	蓝牙传输距离：≤8M
+7.	电池容量：380mAh
+8.	待机时间：满电放置30天
+
+手柄充电/休眠/唤醒功能：
+
+1.	充电时LED4指示灯常亮,充饱后熄灭！
+2.	睡眠/唤醒功能:游戏手柄在5分钟内不使用会进 入休眠状态，当需要重新使用时需按HOME键唤 醒即可回连；
+3.	电池电量不足时,LED4快闪提示；
+
+
+操作使用模式：
+
+Android 系统
+
+HID 模式(GamePad)
+键盘模式
+鼠标模式
+模式配对 
+(长按2秒）
+X+Home
+A+Home
+Y+Home
+指示灯
+LED1
+LED2
+LED1 或 LED2
+备 注
+在HID或键盘模式下均可动态切换成鼠标模式
+
+iOS系统
+Windows 系统
+
+iCade模式
+X_Keyboard 模式
+HID 模式(GamePad)
+模式配对
+ (长按2秒）
+B+Home
+Y+Home
+X+Home
+指示灯
+LED1.LED2
+LED1.LED2
+LED1
+备 注
+默认为键盘英文输入法
+支持iOS非越狱设备
+需蓝牙适配器
+
+iOS按键映射功能：
+
+支持iOS非越狱设备，按键映射功能需在“新游游戏厅内” 相关游戏下操作
+1.	同时按L3+SELECT组合键，在游戏下可以弹出映射界 面；（在iOS iPad平板系列上操作游戏时需使用此功能!）
+2.	将需要映射的按键，拖到相应的触摸功能键上与之重 叠保存后即可操作游戏！
+
+
+
+
+
+安卓设备使用说明：
+安卓系统绝大多数游戏支持HID模式(在电脑上使用时Hid键值一样，支持绝大多数此类游戏； 在相关手机游戏厅或模拟器下载的游戏同样支持，如“葡萄游戏厅”）
+1.	同时按X键和HOME键2秒，此时LED1快闪;如图1
+2.	将Android设备端的蓝牙功能打开,点击“扫描”，当搜索到蓝牙名为“PG-9021”的设备名时选 择配对连接；如图2
+3.	连接成功，LED1指示灯常亮！如图3
+4.	进入游戏(游戏厅或模拟器下载的游戏可以直接玩）
+图 1
+
+图2
+
+图3
+
+
+iOS 设备 X_Keyboard 模式
+X_Keyboard模式(支持备，在相关或模拟器下载的游戏同样支持，如“新游游戏厅”）
+1.	同时按Y键和HOME键2秒，此时LED1,ED2同时快闪;如图1
+2.	将iOS设备端的蓝牙功能打开，当搜索到蓝牙名为“Newgamepad N1”的设备名时，选择配对连 接；如图2
+3.	连接成功，LED1.LED2指示灯常亮！如图3
+4.	支持IOS设备9.3.0以上系统；
+5.	手机扫描二维码下载游戏平台，进入平台下载所需要的游戏。
+图1
+
+图2
+
+ 图3
+
+
+iOS设备iCade模式
+支持iOS非越狱设备,可以使用苹果商店内“APP Store”下载的游戏，当在“APP Store”内搜索 “iCade”时，会弹出海量的游戏并可以操作；
+1.	需将键盘输入法设为英文输入，才能正常操作游 戏；如图1
+2.	同时按住B键和HOME键2秒，此时LED1.LED2同 时快闪;如图2
+3.	将iOS设备端的蓝牙功能打开，当搜索到蓝牙名为“PG-9021”的设备名时，选择配对连接；如图3
+4.	连接成功，LED1.LED2指示灯常亮！如图4
+
+
+图2
+
+图1
+
+图4
+
+
+图3
+
+
+
+
+
+
+
+调出触摸键盘：
+
+iOS系统在X_Keyboard模式连接状态下可以调出 触摸键盘界面；方便在游戏中输入文字和字符；
+1.同时按R3+SELECT组合键。
+
+
+USB有线/蓝牙连接：
+
+1.	通过MICRO USB数据线将手柄与电脑连接，无 需安装驱动即可连接！
+2.	连接OK后默认为X_INPUT输入模式；
+3.	当使用蓝牙连接时，需配一个蓝牙接收器，在HID 模式才可使用；
+
+
+iCade模式下支持的部份游戏：
+
+Muffin Knight - Angry Mob Games 
+Kung Fu Rabbit - Bulkypix 
+Box Cat - Rusty Moyher
+ Temple Run - Imangi Studios, LLC 
+Midway Arcade - Warner Bros.
+PAC-MAN for iPad - Namco Networks America Inc. Games
+Super Lemonade Factory - Shane Brouwer
+Blast Ball-UNCADE
+Gold Runner-YOMEN, Inc.
+Retro Racing - Mr Qwak Limited
+Minotron: 2112 - Llamasoft
+Velocispider - Retro Dreamer
+No Gravity - Realtech VR
+Super Mega Worm - Deceased Pixel LLC
+Space Inversion - Silverline Arts
+Sideways Racing - Bjango
+Emerald Mine - Les Bird
+Freeesh - Realtech VR
+Commodore 64 - Manomio LLC
+The Exterminator-SUMO Productions
+IronStar Arena -Appracatappra, LLC.
+Compression HD - Little White Bear Studios, LLC
+ Mos Speedrun - Physmo 
+Warblade HD-EdgarVigdal
+Plum Crazy - Claymore Games
+HungryMaster - xionchannel
+Cyborg Livestock - PopArcade
+Space Inversion 2. - Silverline Arts
+Stardash - OrangePixel
+Super Drill Panic - OrangePixel
+GoatUp - Llamasoft
+Minotaur Rescue - Llamasoft
+Bob's Action Racing - VariaMedia GmbH
+Silverfish MAX - Chaotic Box
+Match Panic - Chaotic Box
+Retroid - Flat Black Films
+Fruity The Snake HD - 22Moo
+AirAttack HD - Art In Games
+Haunted Hallway-UNCADE
+HyperBowl- Technicat, LLC
+Battlestation - CrushCrumble
+Jungool - Headsoft
+Influx - Half Fast Games
+Aka ne Lite
+Rush City
+Lemonade
+Slfpart2
+
+注意事项：
+1.	请不要把本产品在潮湿或高温地方存储；
+2.	不要敲击、摔打、棒打、刺穿、或试图去分解本产品，以免对产品造成不必要的损害；
+3.	产品内置电池，请勿和垃圾一起丢弃；
+4.	不要在靠近火或其它热源的地方对手柄进行充电。
+5.	非专业人员误拆卸本产品,否则不在售后保修服务内；
+专利号：ZL2013304321953
+
+SELECT键
+
+左3D摇杆 及下压L3键
+
+HOME 键
+
+十字方向键 USB充电接口
+
+START键
+
+A/B/X/Y功能键
+
+模式/充电指示灯 多媒体键
+
+右3D摇杆及下压R3键
+
+电源拨动开关
+
+RB键 RT键
+
+LB键 LT键
+
+电性参数：
+
+蓝牙接收器
+
+

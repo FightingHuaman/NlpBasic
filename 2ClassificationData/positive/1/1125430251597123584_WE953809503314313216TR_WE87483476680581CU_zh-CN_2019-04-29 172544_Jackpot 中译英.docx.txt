@@ -1,0 +1,6 @@
+﻿Let’s Hit The Jackpot！
+继Insurance及发Run It Multi-times之后，PPPoker再度为俱乐部推出极具特色的功能——Jackpot，让玩家在精彩对决的同时，尽享中大奖的乐趣。
+1. 创始人点击俱乐部首页的jackpot图标或管理页面，把jackpot状态设置为开启并输入起始值，即可开启jackpot功能。之后，系统将从符合条件的底池里抽取1BB，滚入jackpot池。
+2. Jackpot分为High Hand Jackpot及Cooler Jackpot，大牌jackpot的牌型必须为4条(four of a kind)、同花顺(straight flush)及皇家同花顺(royal flush)，而cooler jackpot必须为葫芦(full house)vs 4条以上的牌型，并且所有jackpot都必须两张手牌成牌，当玩家在打牌过程中击中某一类jackpot时，系统将自动给该玩家发放奖励。
+3. jackpot功能前期仅对联盟开放，让我们联盟起来，共同体验jackpot带来的紧张刺激吧！
+

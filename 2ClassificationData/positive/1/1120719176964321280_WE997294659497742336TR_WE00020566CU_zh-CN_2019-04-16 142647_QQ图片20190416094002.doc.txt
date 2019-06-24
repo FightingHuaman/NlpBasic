@@ -1,0 +1,175 @@
+﻿产品简介
+
+
+产品介绍：
+Introduction
+
+功能
+Function
+说明
+Illustrate
+SG1音乐睡眠灯是一台集合了炫彩灯与HIFI音乐为一体的多功能蓝牙音箱，让你在聆听美妙音乐的时候，也能享受幻影的炫光，为你的家添上新的活力。同时，它还是一台闹钟高清的LCD时钟显示，轻巧的设计，简单便捷的使用体验，小鸟与流水的闹铃声都能为你的每个早晨带来一个好心情。
+开箱里有：
+
+
+屏幕
+Display
+VA液晶屏
+VA LCD Display
+
+色彩
+Color
+五种色彩模式
+5 Colorful led light
+
+亮度
+Brightness
+四种亮度模式
+4 Led intensity control
+
+震动感应
+Vibration sensor
+震动感应亮灯
+Vibration sensor
+
+时间
+Time
+十二小时制
+12-hour time display
+
+闹钟
+Clock
+可视化闹钟
+Alarm clock
+
+
+
+
+铃声
+Ring
+三种铃声
+3 alarm ringing
+
+电源
+Power
+2000mA锂电池
+2000 mA lithium frequency
+设备
+Equipment
+说明书
+Instruction
+数据线
+Cable
+
+蓝牙
+Bluetooth
+蓝牙5.0
+Bluetooth
+
+
+操作说明：
+Operation Instructions
+
+VOLUME/PREVIOUS 音量+/下一首
+
+PLAY/PAUSE/ALARM 播放/暂停/闹钟
+
+MENU/COLOR设置/炫彩灯
+
+DISPLAY DIMMER/OFF/RETURN亮度调节/关闭/退出
+
+BLUETOOTH ON/OFF 蓝牙开关
+
+VOLUME-/PREVIOUS 音量-/上一首
+
+LCD SCREEN 液晶屏
+
+POWER/SCREEN 开关/熄屏
+
+COLOR 色彩灯
+
+DIMMRR 亮度
+
+RINGING 铃声
+
+SETALARM 闹钟
+
+POWER DISPLAY 电池显示
+
+SET TIME 设置时间
+
+VOLUME 音量
+
+BLUETOOTH 蓝牙
+
+USB INPUT POWER USB电源口
+
+
+按键说明：
+Keynote description
+按键
+Key button
+功能描述
+Functional descripton
+
+设置菜单说明
+Setting
+
+
+短按
+Short press
+长按2秒 Hold press 2S
+1,	进入设置
+长按键2秒进入菜单设置模式。
+菜单设置期间，被设置的功能图标会闪烁提示。
+2,	切换
+切换所需设置功能，单按键，以图标闪烁为准。
+3,	调整
+按键来调整功能的大小，
+调整后，按切换到下一个功能。
+4,	退出
+设置完成后，按键可以退出。
+设置期间，亦可按键快速退出。
+5,	如设置期间，无任何揉作，10秒后自动退出。
+
+熄屏
+Turn off LCD screen
+开/关机 Power on / off
+
+音量-
+Volume -
+上一首
+Previous
+
+音量+
+Volume +
+下一首
+Next
+
+播放/暂停/停止闹铃
+Play / Pause / Snooze button
+关闭闹钟 Alarm off
+
+色彩灯选择
+Colorful light selection
+菜单设置
+Setting
+
+夜间模式
+Night mode
+
+
+彩灯亮度调节
+Light brightness selection
+关闭彩灯 Colorful light off
+温馨提醒：
+在晚上10:00 PM〜早上7:00 AM期间，夜间默认为免扰模式默认开启，设备上所有的提示音都为静音。
+(除闹钟功能）
+
+
+蓝牙开/关 Bluetooth on / off
+注解：【振动开关功能】
+当关闭彩灯”5s后，振动唤醒功能猷认开启，轻拍设备则开启彩灯功能，此时彩灯长亮1分钟后则自动关闭.
+
+
+

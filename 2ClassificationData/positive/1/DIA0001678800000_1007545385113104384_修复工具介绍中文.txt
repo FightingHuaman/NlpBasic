@@ -1,0 +1,28 @@
+软件使用视频
+MacOS
+Windows
+此工具适用于Windows系统和Mac系统，用于修复和检查Gladius磁盘(disk of the Gladius)
+ 
+功能如下：
+lCheck: 检查磁盘储存情况
+IFex: 修理磁盘问题
+IFormat:格式化磁盘数据
+IReport: 发送Gladius报告
+ 
+应用问题
+1，WIFI已连接，但是IF.DIVE显示 "无法连接摄像头"，开始 按钮无法点击。
+2，无人机仅储存有几分钟的视频，但是SD卡已满。注：如果您仍能进入IF.DIVE，请首先清除磁盘数据
+ 
+修复步骤：
+1，下载工具并解压；
+2，在电脑上链接Gladius前缀的WiFi；
+3，双击GladiusDiskCheck打开它；
+4，点击开始按钮；
+5，如果您的Gladius有两个磁盘：系统（System）和媒体（Media），您仅需要修复media磁盘即可。视频从开始到1：28分展示了修复这两个磁盘的步骤。
+6，如果您的Gladius有三个磁盘：系统（System）, 软件（Software）和多媒体（Media），您需要同时修复Software和Media磁盘。视频从1：47分开始，展示了修复这三个磁盘的步骤。
+7，选择修复按钮，等待修复。
+8，点击OK，完成修复。
+9，重新打开浮力模块，重新连接WIFI和蓝牙，然后打开APP查看问题是否解决。
+ 
+注：
+如果问题仍没有解决，请点击按钮"发送报告至Gladius support department",输入邮箱，点击发送按钮。

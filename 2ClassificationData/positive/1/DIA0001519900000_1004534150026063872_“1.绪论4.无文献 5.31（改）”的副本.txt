@@ -1,0 +1,12 @@
+   
+　Introduction 
+   Food Truck是一种起源于19世纪后期美国德克萨斯州，在移动车辆上进行食物运营的一种新兴即食街头食品(ready-to-eat street food）。
+   随着食品经济的快速发展，生活节奏加快和消费模式多样化使得消费者渐渐将饮食目标转移到消费低、食用便捷快速、品种多样的Food Truck上。According to a research by IBISWORLD，美国餐车达到4046辆， industry revenue has increased at annualized rate of 7.3% gain to reach $960 million over the 5 years to 2017, 预计餐车数量将持续增长。截止到2016年，加拿大有2298辆移动餐车营业，average revenue gain to reach $129.1 thousand. 据KFDA统计，到2015年3月底韩国得到认证的餐车仅2处，而截至2018年3月底得到认证的餐车已达到318处，且其中不包括未登记的餐车。消费者对Food Truck的需求量逐渐上升使得餐车广泛流行起来。
+   三明治是典型的街头即食食品。XX研究论文中指出对XX家街头食物中调查三明治消费量占比SS。三明治是将未加热的食物(tomato, lettuce等)或与加热过的食物(eggs等)混合后夹在两片面包片之间的多种成分食物(multi-ingredient food)，食用方便，种类多样。但鸡蛋制品因为含水量高，营养丰富易滋生出沙门氏菌，被FDA认定为排名第二的高风险食品。Vegetables are also classified as high risk foods showed by Australian Institute of Food Safety. M El-Shenawy通过研究发现街头贩卖的sandwich中易滋生大量的Listeria spp.。???等人通过研究发现街头贩卖的Sandwiches易滋生出大量黄色葡萄球菌。三明治作为high-risk food,售卖三明治的食品餐车是食源性疾病爆发的潜在风险。由sandwiches引起的foodborne illnesses outbreak reached 4.26%, patients reached 4.0% in the United States from 2004 to 2013。因此三明治是容易引起食源性疾病的高危险Ready-To-Eat Food。
+   并且制作即食食品的食品餐车长时间暴露在空气中，且由其所处环境、食材料储存加工、操作设备、操作者卫生习惯、处理过程发生交叉污染及制作过程无加热等原因三明治等即食食品容易被病原菌污染。韩国现在不缺乏对三明治的微生物危害要素分析研究，但缺乏针对在Food Truck上售卖的三明治的微生物评价的研究资料。
+   且当下各个国家对于食品餐车的现行管理法律不完善且存在差异。在美国，Food Truck不受FDA监管 而由各州和地方政府监管。所有的餐车供应商在遵循卫生法规之外，纽约的food truck供应商在获取执照与许可证后便可在允许范围内营业，但芝加哥的餐车供应商有更严苛的时间及场所移动限制等规定。中国Food Truck的相关法律由省，自治区，直辖市自定，但不同于美国的是各地区目前还没有系统化的管制法律。加拿大法规表示若想进行food truck生意，a variety of licences and permits from different levels of government are needed. 韩国在经历两次规则改革会议后,于2014年9月实现Food Truck合法化。因使用特殊汽车贩卖食物，食品餐车同时受「?????」和「??????」管制。且食品卫生法里允许进行Food Truck的营业方式只有???????和?????。
+   HACCP(Hazard Analysis Critical Control Point) System是对产品和制作过程中进行Hazard(microbiological, physical and chemical) Analysis以判别是否会引起食品安全问题并制定关键控制点(Critical Control Point)以进行可监控的预防措施，从而保证食品安全的预防体系。其中CCP的建立是HACCP System的重要部分。建立正确的CCP可以有效地控制生产过程中危害要素对食品的污染从而向消费者提供安全的食品。HACCP体系的设立目的并不在于将存在于食品中的细菌微生物完全去除，而是将潜在的危险控制在合理范围内。因此HACC P体系现已被认定为世界上最高效的食品安全管理体系。
+   HACCP 自1995年进入韩国至今已逐渐完善，据KFDA，食品服务业自1999年起截止2016年已有179家得到HACCP 认证，但目前仍然没有餐车取得HACCP认证。且目前相关的法律法规并不完善，所以为最大限度保证餐车三明治的安全卫生，对餐车制定且应用HACCP体系是必要的。
+   因此为了保证餐车上三明治的安全卫生，防止食源性致病菌引起食源性疾病，本研究对餐车上三明治加工过程中使用的原辅材料，制作过程，作业者，设备和工作环境进行微生物危害要素分析评价后，根据分析评价结果进行CCP 的选定，开发符合营业的管理基准并改善营业环境从而保证三明治餐车的安全卫生，也为其余餐车发展提供参考资料。
+   
+

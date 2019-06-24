@@ -1,0 +1,102 @@
+﻿
+曾祥君，博士、长江学者特聘教授、国家杰出青年基金获得者、国家百千万人才工程及国家有突出贡献中青年专家、国务院特殊津贴获得者、中文核心期刊《电力科学与技术学报》主编，长期从事配电系统接地故障处理与电网故障行波定位研究。
+Zeng Xiangjun, Ph.D., Distinguished Professor of Changjiang Scholars, Winner of National Outstanding Youth Fund, National Hundred-Thousand-Ten Thousand Talents Project, Young and Middle-aged Experts with Outstanding Contributions, and State Council Special Allowance, Editor of Chinese Core Journal “Journal of Electric Power Science and Technology, long-term engaged in handling ground faults of power distribution system and studying the location of traveling-waves in grid faults.
+
+中性点非有效接地配电网的电源和负荷均为三角形接线，中性点位移电压变化不影响电源和负荷正常运行，可以通过零序电源进行灵活调控；且零序回路阻抗大，调控所需电源容量小。本报告发明外加零序电源，主动调控中性点位移电压，从而实现相电压灵活调控；在分相带电作业时，调控零序电源，降压作业点电压，甚至可降低到零，有效减少人身设备的安全隐患。
+The power supply and load of neutral point non-effectively grounded distribution both should adopt delta connection, the changes of neutral point displacement voltage will not affect the normal operation of power supply and load, which can be flexibly regulated by zero-sequence power supply. In addition, the impedance of zero-sequence loop is large, which requires a small capacity of power supply for the regulation. This report invented the addition of zero-sequence power supply, and actively adjusts the neutral point displacement voltage to realize flexible control of phase voltage. When phase-splitter is under live-working, the zero-sequence power supply is regulated, and the voltage at the operating point can even be reduced to zero, which can effectively reduce the number of safety hazards to the people and the device.
+
+肖坤：1987年毕业于西安交通大学电力系统自动化专业，过电压与绝缘配合专业硕士学位。一直在国网辽宁电力科学研究院（前身东北电力科学研究院）工作，从事带电作业科研，试验以及教学培训工作，多次获得省部级科技进步奖，连续五届全国带电作业标委会委员，三届中国电机工程学会带电作业专委会秘书长。全国输配电协会带电作业专家委员会副主任委员，主任委员。
+Xiao Kun: Graduated from Xi'an Jiaotong University in 1987, majoring in power system automation, with a master's degree in overvoltage and insulation co-ordination. He has been working in the State Grid Liaoning Institute of Electric Power Sciences (formerly the Northeast Institute of Electric Power Sciences), engaged in scientific research, testing, teaching and training of live working, and has won provincial and ministerial-level scientific and technological progress awards for many times. He has served as the Member of National Working Committee on Live Working for 5 consecutive terms, Secretary-General of China Electrical Engineering Society Special Committee on Live, Deputy Chairman and Chairman of the National Committee of Experts in Electric Communication and Distribution with Live Working.
+
+严宇，博士、高级工程师，智能带电作业技术及装备湖南省重点实验室智能机器人研究室主任，主持完成科技项目12项，发表SCI/EI检索论文25篇，授权发明专利12项，制定行业标准1项，获2016、2017年湖南省科技进步奖一等奖各1项。
+Yan Yu, Ph.D., senior engineer, director of Intelligent Robotics Research Office of Hunan Key Laboratory with Intelligent Live Working Technology and Equipment, presided and completed over 12 scientific and technological projects, published 25 SCI/EI papers which can be searched, gained12 invention patents which have been authorized, and formulated one industry standard, and won first prize Hunan Science and Technology Progress Awards in 2016 and 2017.
+
+本议题将着重介绍制约农配网不停电作业开展的地形、装备及环境三因素，随后针对地形复杂多变、直接作业法难以大范围开展及极端天气下人员作业环境改善三大创新点进行介绍，最后，介绍项目所取得成果、应用效果及前景。
+This topic will focus on three factors that restrict the working of agricultural electric distribution network without power outage, which are the terrain, equipment and environment. Then, it introduces three major innovations in the complex and variable terrains, the difficulty of large-scale implementation of direct operation method and the improvement of personnel operating environment under the extreme weather. Finally, it introduces the results, application effects and prospects of the project. 
+
+日本不停电施工的变迁
+Changes of construction without power outage in Japan
+
+本次演讲主要介绍日本国内配电施工方法的变迁，如何从停电施工向不停电施工转变以及当前最新的施工方法，并对围绕施工的环境变化以及配套使用的绝缘型高空作业车进行介绍。日本从1970年前后开始使用车载式高空作业车，配电施工也是从70年代后期开始使用绝缘斗臂车。
+This presentation mainly introduces the changes in the construction method of electric distribution, the latest construction method of how to change from construction with power outage to construction without power outage, and introduces the environmental changes around the construction and the supporting insulated aerial work vehicles. Japan began to use vehicular aerial work vehicles around 1970, and the construction with power distribution began to use insulated boom type vehicles in the late 1970s.
+
+薮井  和洋　1954年出生　64岁　
+Sakai Kazuo was born in 1954, 64 years old.
+株式会社爱知公司 开发管理室　电力专家
+Aichi Corporation, Development Management Office, Power Specialist
+1976年入职株式会社爱知公司（日本）。
+In 1976, he joined Aichi Corporation (Japan).
+从事配电高空作业车及自走式高空作业车的开发。
+Engaged in the development of aerial work vehicles with power distribution and self-propelled aerial work vehicles.
+先后担任过商品开发部部长、品质保证部部长、研究开发部部长
+He has served as Minister of Commodity Development, Quality Assurance, and Research and Development.
+2010年至今一直在日本爱知的产品企划室,在产品的企划、研发过程中一直与东京电力、关西电力等各电力公司保持良好的沟通。
+Since 2010, he has been in the product planning office of Aichi, Japan, and have maintained good communication with various power companies such as Tokyo Electric Power and Kansai Electric Power in the planning, research and development of products.
+
+直伸式绝缘斗臂车的特点和应用
+Characteristics and applications of straight-extending insulated boom type vehicles
+
+本次演讲主要介绍带拐臂的多关节绝缘斗臂车的特点及应用（事例）。日本配电施工中所使用的绝缘型斗臂车以直伸式为主，工作斗和工作臂之间配有可回转的拐臂。这是在80年代中期结合日本国内施工方法的变化开始开发出来的，带拐臂的绝缘斗臂车在日本的普及率很高，至今依然是市场上的主力车型，现在在中国也已被普遍使用。
+This presentation mainly introduces the characteristics and applications of the multi-joint insulated boom type vehicle with a crank arm (case). Insulated boom type vehicles used in Japan for construction with power distribution are mainly straight-extending, and there is a swingable crank arm between the work bucket and boom. This was developed in the mid-1980s in conjunction with changes of construction methods in Japan. The insulated boom type vehicle with a crank arm have a high penetration rate in Japan and is still the main model on the market, which has also been widely used in China now.
+
+坂本　政巳　1963年出生　55岁　
+Sakamoto Masami, born in 1963, 55 years old
+1986年入职株式会社爱知公司（日本）
+In 1976, he joined Aichi Corporation (Japan).
+先后在商品开发部、产品企划室任职，担任电力技术专家。
+He has worked in the product development department and product planning office, and served as an expert in power technology.
+主要负责配电高空作业车的开发和面向海外市场的高空作业车的开发。
+Mainly responsible for the development of aerial work vehicles with power distribution and aerial work vehicles for overseas markets.
+
+激光在外绝缘污秽清洗中的应用研究
+The research on the application of laser in cleaning the external insulation pollutions 
+方春华，副教授，博士，硕士生导师，输电线路工程系（高电压技术研究中心）主任，先进输变电技术研究中心主任，输电线路工程国家级实验教学示范中心副主任。2004年获武汉大学电气工程学院电力电子专业工学学士学位，2012获得武汉大学高电压与绝缘技术专业硕士、博士学位，主要研究电力设备绝缘故障与诊断技术，多年来主持国家重点实验室开放基金项目、国家级教研项目、国家电网公司、南方电网公司等数10项纵横向项目，发表文章10余篇，申报专利30余项，申请软件著权5项。
+Fang Chunhua, Associate Professor, Ph.D., Master Instructor, Director of Transmission Line Engineering Department (High Voltage Technology Research Center), Director of Advanced Transmission and Transformation Technology Research Center, Deputy Director of National Experimental Teaching Demonstration Center of Transmission Line Engineering. In 2004, he obtained a bachelor's degree in electrical engineering from the School of Electrical Engineering of Wuhan University. In 2012, he obtained a master's degree and a doctorate in high voltage and insulation technology from Wuhan University. He mainly studied the insulation faults of power equipment and the diagnostic technology. In the past years, he has presided 10 government-sponsored and enterprise-funded researches such as the National Key Laboratory Open Fund Project, National Teaching and Research Project, and Projects for State Grid Corporation and China Southern Power Grid Corporation. He has published more than 10 articles, applied for more than 30 patents, and applied for 5 software copyrights.
+
+随着国内激光清洗技术趋于成熟，为输变电设备外绝缘污秽带电清洗提供了一个全新解决方案：激光带电清洗效果极佳，清洁度远高于目前各种清扫方式，且适用于不同类型污秽；激光带电清扫实现了非接触式清洗，可确保设备及作业人员安全，激光清污技术是输变电设备外绝缘污秽带电清洗领域的重大突破，在电力系统有巨大的市场推广前景。
+With the domestic laser cleaning technology becoming more mature, it provides a new solution for the external insulation and pollution cleaning of power transmission and transformation equipment: the laser cleaning effect is excellent, the cleaning degree is much higher than the current cleaning methods, and it is suitable for different types of contaminations. Laser cleaning with power supply enables non-contact cleaning, which ensures the safety of equipment and operators. Laser cleaning technology is a major breakthrough in the field of external insulation contamination cleaning of power transmission and transformation equipment, and has great market prospects in power system.
+
+SFE系统在低压不停电作业中的运用
+Application of SFE system in low voltage operation without power outage
+
+李云玲，女，中共党员，高级工程师，国家电网公司评标专家，华北电网公司生产技术能手，国网河北省电力有限公司先进工作者，省公司优秀专家人才，发表各类论文10余篇，国家发明专利2项，实用新型专利5项，现从事配网不停电作业管理工作。
+Li Yunling, female, member of the Communist Party of China, senior engineer, evaluation expert of the State Grid Corporation, production technology expert of North China Power Grid Corporation, advanced worker of State Grid Hebei Electric Power Co., Ltd., outstanding expert of provincial company. She has published more than 10 papers, gained 2 national invention patents and 5 utility model patents. Now she is engaged in the management of the operation of distribution network without power outage. 
+
+强化市县一体化协作，助力县域公司谋发展
+Strengthening the integration of cities and counties to help county-level companies’ development
+
+随着配网不停电作业的不断发展，覆盖范围逐步由城市向县域延伸，河北公司优先推行市县公司一体化管理，充分发挥市公司的各方面资源优势，使不停电作业管理理念及主要做法向县公司全面延伸。本文从河北公司发展县域配网不停电作业的理念入手，介绍了具体的发展思路及做法，为推进县域配网不停电发展提供示范、借鉴及交流作用。
+With the continuous development of the operation of distribution network without power outage, the coverage gradually extends from the city to the county. Hebei Company gives priority to the integrated management of the city and county companies, giving full play to the various resources’ advantages of the city companies, so that the management concept and main practices of the operation of distribution network with power outage can be extended to the county companies. This paper starts with the concept of Hebei company's development of operation of distribution network without power outage in county regions, introduces the specific development ideas and practices, and provides demonstration, reference and communication functions for promoting the development of the operation of distribution network with power outage in county regions.
+
+中日带电作业技术交流论坛
+Sino-Japanese live working technology exchange forum
+
+带电作业检修工作的安全提升与工器具的应用发展——柱间切分（牵拉）工作法的应用
+Safety improvement of live working maintenance and application development of tools--application of splitting (pulling) working method between columns
+
+上海绝缘手套作业法的特点及应用案例介绍
+The introduction to features and application cases of Shanghai insulation gloves operation method 
+株式会社永木精機—NGK
+Nagagi Seiki Joint Company. - NGK
+
+电网检修作业技术发展的未来趋势
+Future trends in the development of operation technology of power grid maintenance
+
+高技能人才队伍建设与鼓励
+The Construction and encouragement of high-skilled talent team
+
+电网不停电检修技术应用及发展
+The application and development of the technology of power grid maintenance without power outage
+
+国家电网公司不停电检修技术与带电作业开展情况
+The conduct situation of technology of maintenance without power outage and live working in State Grid Corporation
+
+配网带电作业思考与探索
+Thinking and exploration of live working in distribution network
+上海市电力公司不停电检修技术应用与发展
+The application and development of technology of maintenance without power outage in Shanghai Electric Power Company
+
+陈维江，男，国家电网公司交流建设部副主任，中国电力科学研究院博士生导师，教授级高级工程师、博士生导师。享受国务院政府特殊津贴专家，从事科技工作30余年，潜心于雷电接闪放电理论与防护技术研发，其成果在电力、轨道交通等系统广泛应用，2008年获国家技术发明二等奖1项（排名1）；全过程参与我国特高压输电技术研发与应用，作为国家973计划首席科学家，主持攻克了特高压电磁与绝缘特性基础难题， 2012年获国家科技进步特等奖1项（排名2），2013年获中国电力杰出贡献奖；2013年获聘为中国科协首席科学传播专家；获国家发明专利23项，发表EI、SCI 论文80余篇。2015年12月7日，当选中国科学院技术科学部院士。
+Chen Weijiang, male, deputy director of the exchange construction department of the State Grid Corporation, doctoral tutor of China Electric Power Research Institute, professor-level senior engineer, doctoral tutor. He is one of the experts who can have the State Council special allowances. He has been engaged in scientific and technological work for more than 30 years, immersed in the research and development of the discharge theory of thunder and receiving lightning and protection technology, the results of which are widely used in power, rail transit and other systems. He won the second prize of national technology invention in 2008 (ranked first), fully participated in the R&D and application of UHV transmission technology in China. As one the chief scientists of the National 973 Program, he presided and overcame the fundamental questions of UHV electromagnetic and insulation properties, and won the National Science and Technology Progress Special Award in 2012 (ranked second). In 2013, he was awarded the China Power Outstanding Contribution Award and appointed as the chief scientific communication expert of China Association for Science and Technology. He has gained 23 national invention patents, published more than 80 EI and SCI papers. On December 7, 2015, he was elected as an academician of the Department of Technical Sciences of Chinese Academy of Sciences.
+
+

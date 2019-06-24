@@ -1,0 +1,158 @@
+﻿重度子痫前期人胎盘绒毛膜板动脉中经典瞬时受体电位通道6的表达情况
+（基金项目：2014 年四川省科学技术厅与泸州市人民政府、泸州医学院联合科研专项资金计划项目 ( 川科发计[2014]10 号) 
+第一作者简介：肖俊，在读硕士研究生，医师
+通信作者：傅晓冬，硕士，主任医师，E-mail：dongerfu@163.com
+肖  俊 ， 傅晓冬
+（西南医科大学附属医院妇产科，四川泸州  646000  ）
+摘要 目的：主要研究重度子痫前期中人胎盘绒毛膜板动脉（human placental chorionic arteries，HPCA）经典瞬时受体电位通道6（Transient Receptor Potential Canonical 6，TRPC6）的表达情况，为探讨TRPC6的表达与该疾病的相关性。方法：采用实时荧光定量PCR法（QPCR）及蛋白免疫印记法（Western Blotting）来检测TRPC6在正常孕妇组、早发型重度子痫前期组及晚发型重度子痫前期组的mRNA及蛋白表达情况。结果：早发型重度子痫前期TRPC6的mRNA的相对表达量为2.8200 ±1.0287，晚发型重度子痫前期TRPC6的mRNA的相对表达量为1.9183±0.8964，差异有统计学意义（P<0.05）。在正常孕妇组TRPC6的蛋白表达量为0.5104 ± 0.0916，TRPC6在早发型重度子痫前期的蛋白表达量是1.3730 ± 0.1712，在晚发型重度子痫前期的表达量为0.9114±0.1280，差异有统计学意义（P < 0.05）。结论：TRPC6在重度子痫前期孕妇组中的mRNA及蛋白表达水平高于正常孕妇组，故猜测TRPC6可能参与了重度子痫前期的发病过程，且早发型重度子痫前期孕妇组的mRNA及蛋白表达水平高于晚发型重度子痫前期孕妇组，且重度子痫前期的发病时间越早，该通道的蛋白表达量越高。
+关键词 早发型重度子痫前期；晚发型重度子痫前期；人胎盘绒毛膜板动脉；瞬时受体电位通道6
+中图分类号：R714.24
+The eExpression of the Ttransient Receptor receptor Potential potential Canonical canonical 6 protein in the human placental chorionic arteries of inof severe preeclampsia
+XIAO Jun,FU Xiaodong.
+ Department of Gynecology and Obstetrics,The Affiliated Hospital of Southwest Medical University，Luzhou 646000, Sichuan Province China.
+  Abstract  Objective:The purpose of the research is t To observe investigate the expression of Transient transient Receptor receptor Potential potential Canonical canonical 6 ((TRPC6) inin the human placental chorionic arteries inof severe preeclampsia, to inquire and the relationships correlation between the TRPC6 expression and the disease. Methods: Real-timeWe use th quantitative e QPCR and the wWestern Blotting blotting were used to detect measure the mRNA and protein expressions of TRPC6 inthe TRPC6 between the the normal control pregnant women group, the group、the early-onset severe severe preeclampsia group, and the the late-onset severe severe preeclampsia group. Result: ：The relative mRNA expressions of TRPC6 wasere significantly different The relative expession of mRNA inbetween the the early-onset severe preeclampsia group is (2.8200 ±1.0287) and,The relative expession of mRNA in the the late-onset severe preeclampsia group ( is 1.9183±0.8964) ,the differences are significant(2.8200±1.0287 vs 1.9183±0.8964, P < ＜ 0.05). The protein protein expressions of the TRPC6 wasere significantly different amongbetween the in the normal control group is (0.5104 ± 0.0916),The protein expression of the TRPC6 in the  the early-onset severe preeclampsia group (is 1.3730 ± 0.1712),The protein expression of the TRPC6 in the and the late-onset severe preeclampsia group is  (0.9114 ± 0.1280),the differences are significant (0.5104±0.0916 vs 1.3730±0.1712 vs 0.9114±0.1280, P <＜ 0.05). Conclusion: ：The mRNA and protein expressions of the TRPC6 in the severe preeclampsia groups elevate wasere higher thanin the sever preeclampsia group，which is higher than that in the normal pregnant women control group. Therefore, it iwas speculated that We can guess the expression of the TRPC6 may have be involved in relativity with the development of the severe preeclampsia. The mRNA and protein expressions level of the TRPC6 in the early-onset severe preeclampsia group wasereis higher than that in the late-onset severe preeclampsia group., and the earlier the onset was, the higher the protein expressions were. Besides,the period of the disease is earlier,the expression of the TRPC6 is higher.
+Key words:   EarlyEarly-onset severe preeclampsia;Late Late-onset severe preeclampsia; Human Human placental chorionic arteries; Transient Transient Receptor receptor Potential potential Canonical canonical 6.
+重度子痫前期（Sever Preeclampsia，SPE ）是妊娠期高血压疾病的一种最为多发且常见的类型，其主要表现为高血压、蛋白尿。且伴随着我国的二胎政策的开放，该病的发生率居高不下，有着孕妇高致死率、高早产率及高新生儿死亡率。目前已有学者证实瞬时受体电位通道6（Transient Receptor Potential Canonical 6,TRPC6）在胎盘组织、子宫平滑肌中及孕妇血清中有表达。[2-3]但尚无相关研究证明重度子痫前期孕妇的胎盘绒毛膜板动脉（human placental chorionic arteries ，HPCA）中的TRPC6的表达情况。本研究采用Western Blot的方法从分子水平来探讨TRPC6在重度子痫前期患者的人胎盘绒毛膜板动脉血管平滑肌中的蛋白表达情况。
+1.研究对象与方法
+1.1研究对象
+本研究选取2018年4月至11月于我院产科分娩的患者，重度子痫前期患者病例（30例），早发型重度子痫前期（early-onset severe preeclampsia，ESPE）病例（15例）和晚发型重度子痫前期（late-onset severe preeclampsia，LSPE）病例（ 15例）,正常对照组孕妇（Normal Control，NC）病例（n = 30），诊断标准参照第九版教科书。[1]所有病例均排除妊娠合并慢性高血压、妊娠期合并糖尿病等内分泌系统疾病、妊娠合并心脏病、传染性疾病等其他合并症，且妊娠前及妊娠期间均无吸烟酗酒等不良病史。本研究经我院伦理委员会审核通过，且与所有纳入本研究的患者均签署了知情同意书。其中各组比较年龄差异均无统计学意义（P> 0.05），孕周与血压差异均有统计学意义（P < 0.05）。详见表1、2所示。
+1.2 研究方法
+1.2.1标本采集
+按照上述的纳排标准来选取经阴道分娩或剖宫产分娩的新鲜的胎儿面的胎盘上肉眼可见的绒毛膜板动脉置于低温状中在显微镜下迅速撕剥分离掉血管周围的系膜和绒毛，完整保留胎盘动脉血管，放入无菌EP管中，并置于-80℃超低温冻存。
+1.2.2 主要实验试剂和仪器：总RNA提取试剂盒（TIANGEN, China），Marker III DNA Ladder（Solarbio, China)，6×DNA Loading Buffer（biodder, China），ReverTra Ace qPCR RT Master Mix（TOYOBO, Japan），QuantiNova SYBR Green PCR Kit（QIAGEN, Germany），TRPC6及GAPDH基因上游和下游引物由上海Sangon Biotech合成，实时荧光定量PCR系统（Applied Biosystems, Singapore），核酸浓度检测仪（Thermo Scientific, USA），超纯水仪(Millipore, USA)，GAPDH monoclonal antibody （Bioworld, China），Goat anti-Mouse IgG(H&L)-HRP（Bioworld, China），Anti-TRPC6 antibody（Abcam, USA），Western Blot电泳及转膜系统（BIO-RAD, USA），发光成像仪（Fusion Solo, France）。
+1.2.3 PCR主要步骤：将所有样品在液氮维持的低温状态下研磨之后提取的RNA逆转录为cDNA（complementary DNA, cDNA），再将甘油醛磷酸脱氢酶（glyceraldehyde phosphate dehydrogenase, GAPDH）作为内参基因，进行QPCR。
+1.2.4 Western Blot主要步骤：在液氮所保证的低温状态下将组织研磨成粉末状，并加入含有蛋白酶抑制剂PMSF的RIPA蛋白裂解液来过夜裂解组织中的蛋白质，并用超声破碎仪使组织细胞破碎，蛋白能够被充分提取，加入蛋白上样缓冲液，然后加热使蛋白变性，并置于-20℃中低温保存。按照适宜的比例配制好8%的分离胶及5% 的浓缩胶，将已提取好的样本的蛋白往胶孔里加样后进行电泳、转膜（其中GAPDH的分子量为37kDa，TRPC6的分子量为106kDa）、封闭（5%的脱脂牛奶中且置于摇床上进行）、摇床上过夜孵育一抗（配制GAPDH一抗浓度为1:10000，TRPC6一抗浓度为1:500），PBST洗膜后进行二抗孵育，时间为2h（配制GAPDH二抗浓度为1:10000，TRPC6二抗浓度为1:4000），洗膜后置于成像仪中加好发光液进行曝光，根据所得的条带进行灰度值测定。
+1.3 统计学方法
+通过使用2-DDCt来表示实验组目的基因相对于对照组的变化倍数，使用Quantity one软件对成像所得的条带进行灰度值测定，所测得的TRPC6与GAPDH的灰度值比值作为目的蛋白的相对表达量，采用SPSS17.0统计软件进行分析，计量资料用均数±标准差（）表示，多个样本均数比较采用单因素方差分析，两两比较采用LSD法，以P < 0.05为差异有统计学意义。
+2. 结果
+2.1一般资料
+NC组、LSPE组及ESPE组的一般资料进行比较，其中年龄差异无统计学意义，P＞0.05，孕周、收缩压及舒张压相比较，差异有统计学意义，P＜0.05。
+表1 正常孕妇组（NC组）、早发型重度子痫前期组（ESPE组）及晚发型重度子痫前期组（LSPE组）基本资料
+类别
+NC组
+ESPE组
+LSPE组
+F
+P
+年龄
+28.40 ± 7.49
+27.40 ± 4.561
+32.60 ± 8.47
+0.22
+0.80
+孕周
+38.60 ± 1.08
+33.16 ± 0.6465
+35.90 ± 0.8155
+104.9
+0.000
+收缩压
+112.80 ± 9.02
+169.05 ± 12.25
+168.80 ± 9.68
+227.8
+0.000
+舒张压
+69.30 ± 6.45
+112.00 ± 4.47
+104.00 ± 5.00
+ 183.3
+ 0.000
+2.2 NC组、ESPE组及LSPE组的TRPC6的mRNA相对定量水平
+    通过使用2-DDCt来表示实验组目的基因相对于对照组的变化倍数，从而推断出实验组与对照组的基因表达趋势。NC组、LSPE组及ESPE组TRPC6的mRNA的表达差异具有统计学意义（P＜0.05），详见表2、图1及图2。
+表2 NC组、ESPE组及LSPE组的TRPC6的mRNA相对定量水平2-DDCt值比较
+分组
+TRPC6
+NC组
+1.00
+LSPE组
+1.9183±0.8964a
+ESPE组
+2.8200 ±1.0287ab
+F
+11.18
+P
+0.0001
+注：a 表示与NC组比较，P<0.05；b 表示与LSPE组比较，P<0.05。
+ab
+a
+mRNA相对表达量
+
+注：a 表示与NC组比较，P<0.05；b 表示与LSPE组比较，P<0.05。
+图1  NC组、ESPE组及LSPE组的TRPC6的mRNA相对定量水平2-DDCt值条形图
+
+
+图2  TRPC6的扩增曲线图
+
+2.3 NC组、ESPE组及LSPE组的TRPC6蛋白水平的表达情况
+将NC组TRPC6的蛋白灰度比值为0.5104 ± 0.0916，ESPE组TRPC6表达的蛋白灰度比值为1.3730±0.1712，在LSPE组TRPC6表达的蛋白灰度比值为0.9114±0.1280，NC组、ESPE组及LSPE组的蛋白表达差异具有统计学意义（P<0.05），详见表3、图3、图4。
+
+表3 NC组、ESPE组及LSPE组的TRPC6蛋白水平比较
+名称
+TRPC6
+NC组
+0.5104 ± 0.0916
+ESPE组
+1.3730 ± 0.1712a
+LSPE组
+0.9114 ± 0.1280ab
+F
+26.43
+P
+0.0001
+注：a 表示与NC组比较，P<0.05；b 表示与ESPE组比较，P<0.05。
+TRPC6（36kD）     
+GAPDH（106kD）  
+                      NC组      SPE组          EPSE组      LSPE组
+图3  NC组、ESPE组与LSPE组的TRPC6蛋白表达成像图
+
+灰度值比值
+ab
+a
+
+注：a 表示与NC组比较，P<0.05；b 表示与ESPE组比较，P<0.05。
+图4  正常孕妇组（NC组）与重度子痫前期组（SPE组）TRPC6蛋白表达条形图
+
+2.4 血压与灰度值的相关性分析
+将重度子痫前期组的血压与TRPC6表达的灰度值比值进行Pearson分析，其pearson相关性为0.919，具有统计学意义（P＜0.05）。
+表4  TRPC6蛋白表达与血压水平的相关性（Pearson分析）
+SPE组灰度值比值
+SPE血压值
+r 
+P
+1.2407±0.2075
+168.9±10.13/108.00±5.98
+0.919
+0.000
+
+3讨论
+妊娠期高血压疾病（pregnancy induced hypertention, PIH）的发病机制至今尚不明确，但尤以重度子痫前期这一类型最为常见，其发病率高，并发症多。目前大多数学者认为该病的发生发展与胎盘缺血缺氧、氧化应激、遗传等相关因素有着密不可分的关系。[3]全身小血管痉挛、内皮损伤及局部出血是主要病理生理改变。目前有部分学者意见证实了钾通道与PIH的发病有一定关系。有学者利用单通道膜片钳技术证实了重度子痫前期患者的子宫小动脉及胎盘小动脉中的大电导钙通道激活钾通道（large-conductance calcium-activated potassium channels, BKCa）相比于足月孕妇组的活性降低。[16]已有学者证实，患有子痫前期的孕妇的血液中存在着一些如三磷酸腺苷、内皮素等细胞因子相比于正常孕妇多[4]，而这些细胞因子可以诱导经典瞬时受体电位通道的开放，增加钙离子向细胞内流动，使得血管平滑肌细胞增殖及血管的收缩力加强。由此可猜测，瞬时受体电位通道与重度子痫前期的发病之间可能存在着一定的关系。[5]
+瞬时受体电位通道是一类非选择性的阳离子通道蛋白，其主要位于细胞膜上，最早是在果蝇的视觉系统中检测到[6]，总共包括了七个亚家族，共有28种亚型，即TRPA、TRPC、TRPM、TRPN、TRPP、TRPV和TRPML。瞬时受体电位通道广泛分布于全身各处，在哺乳动物中，TPRC通道分为四种亚型，即TRPC1、TRPC2、TRPC4/5、TRPC3/6/7。[8]在血管平滑肌中，主要有TRPC1、TRPC4及TRPC6参与了表达。[7]其中，TRPC6广泛分布于心脏、肺、脑及血管平滑肌上，其主要参与血管收缩及血小板聚集。[8、18-20]目前已经有学者证实，TRPC6能激活电压门控通道介导的钙离子通道来引起钙离子内流，使动脉血管平滑肌细胞发生收缩和增殖，从而引起血管张力的增加，使得血压增高。[9]有学者研究证明，将TRPC6的表达进行下调，可以减少钙离子内流，因此认为TRPC6的表达参与了钙离子的信号转导。[10、17]此外，TRPC6的蛋白灰度值比值与血压的增高有一定的相关性，随着血压增高，TRPC6所表达的蛋白的灰度值比值增高。
+Weigand等[11] 发现，在肺血管平滑肌中加入一定浓度的TRPC6通道的特异性阻断剂，可阻断TRPC通道介导的钙离子内流，并且能够抑制缺氧性肺动脉血管收缩。 DIETRCHD等[12]学者证实大鼠血管中的TRPC6基因被敲除之后，大鼠的平均动脉压和血管张力均较敲除之前增加，可以猜测TRPC6可能与血管张力的调节有一定关系。大鼠经过造模成高血压模型之后，其中动脉的TRPC6及表达增强，钙离子的转导信号增强，可以推测强化的钙离子信号转导有可能导致了大鼠血管平滑肌细胞的收缩增加，从而致使血压升高。[13]WEISSMNN等[14]学者通过研究表明，小鼠若缺失TRPC6基因，则可能引起平均动脉压的上升。张玉等[15]学者证实子痫前期中胎盘组织及子宫平滑肌中TRPC6的mRNA及蛋白表达均上调，且与病情的严重程度呈正相关，可以推测TRPC6的表达增多与血压的升高有一定关系。
+4结论
+结果显示，重度子痫前期孕妇组的TRPC6的表达水平较正常孕妇组升高，早发型重度子痫前期孕妇组的TRPC6的表达高于晚发型重度子痫前期孕妇组，我们可以大胆猜测，TRPC6与子痫前期患者的血压的调节有关，在疾病的发生及进展过程中起着一定的作用。且重度子痫前期的发病时间越早，TRPC6的表达量越多。但TRPC6的表达增高引起了血压升高还是血压升高引起TRPC6的表达增高的具体机制需要进一步的实验进行研究和论证，后期可设计离体血管环、动物建模，可使用相应的药物来拮抗该通道，以便为妊娠期高血压疾病的诊疗提供更多的理论基础及治疗方式。
+参 考 文 献
+1. 谢幸, 孔北华, 段涛, 等. 妇产科学[M]. 9版. 北京: 人民卫生出版社, 2018: 83-91.
+2. 张玉, 曾凌, 王艳, 等. 子痫前期病人血清瞬时受体电位通道蛋白6检测[J]. 青岛大学医学院学报, 2014 (2): 112-114.
+3. 罗欣, 漆洪波. 子痫前期发病机制分子生物学研究进展[J]. 中国实用妇科与产科杂志, 2012, 28(4): 309-311.
+4. 赵卫秀, 林建华. 妊娠期高血压疾病严重并发症的诊治[J]. 实用妇产科杂志, 2014, 30(6): 410-413.
+5. 刘松君, 叶笃筠, 黄引平. 瞬时受体电位通道与妊娠期高血压疾病[J]. 生命的化学, 2008, 28(1): 72-74.
+6. 苏秋香, 张丽艳, 汲坤, 等. 瞬时受体电位通道蛋白的跨膜片段分析[J]. 中国医科大学学报, 2016, 45(7): 610-615.
+7. Riccio A, Medhurst AD, Mattei C, et al. mRNA distribution analysis of human TRPC family in CNS and peripheral tissues[J]. Brain Res Mol Brain Res, 2002, 109(1/2): 95-104.
+8. Huang CL. The transient receptor potential superfamily of ion channels[J]. J Am Soc Nephrol, 2004, 15(7): 1690-1699.
+9. 徐俊芳. 瞬时受体电位通道6在血管紧张素Ⅱ诱导的大鼠胸主动脉平滑肌细胞增殖中的作用[D]. 合肥: 安徽医科大学, 2010 .
+10. 郭潇舒. TRPC6蛋白表达在子痫前期发病机制中的相关性研究[D]. 青岛: 青岛大学, 2017 .
+11. Weigand L, Foxson J, Wang J, et al. Inhibition of hypoxic pulmonary vasoconstriction by antagonists of store-operated Ca2+and nonselective cation channels[J]. Am J Physiol Lung Cell Mol Physiol, 2005, 289(1): L5-L13.
+12. Dietrich A, Mederos Y Schnitzler M, Gollasch M, et al. Increased vascular smooth muscle contractility in TRPC6-/- mice[J]. Mol Cell Biol, 2005, 25(16): 6980-6989.
+13. Wieder N, Calcium GA, Channels T. And regulation of the actin cytoskeleton in podocytes:towards a future of targeted therapies[J]. Pediatr Nephrol, 2016, 31(7): 1047-1054.
+14. Weissmann N, Dietrich A, Fuchs B, et al. Classical transient receptor potential Channel6(TRPC6)is essential for hypoxic pulmonary vasoconstriction and alveolar gas exchange[J]. Proc Natl Acad Sci U S A, 2006, 103(50): 19093-19098.
+15. 张玉. 瞬时感受器阳离子通道6与子痫前期发病的相关性研究[D]. 青岛: 青岛大学, 2014 .
+16. 朱艳, 侯晓钰, 傅晓冬. 重度子痫前期胎盘小动脉血管平滑肌细胞BKCa通道的改变[J]. 泸州医学院学报, 2016, 39(05): 471-475.
+17. Ahmad AA, Streiff M, Hunter C, et al. Physiological and pathophysiological role of transient receptor potential canonical channels in cardiac myocytes[J]. Progress in Biophysics & Molecular Biology, 2017, 130(B): 254-263.
+18. Eder P. TRPC channels as effectors of cardiac hypertrophy[J]. Circ Res, 2011, 108(2): 265-272.
+19. Schlondorff, J. TRPC6 and kidney disease:sclerosing more than just glomeruli?[J]. Kidney Int, 2017, 91(4): 773-775.
+20. Yue Z, Xie J, Yu AS, et al. Role of TRP channels in the cardiovascular system[J]. Am J Physiol Heart Circ Physiol, 2015, 308(3): H157-H182.
+
+
+1
+
