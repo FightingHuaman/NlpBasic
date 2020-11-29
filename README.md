@@ -1,5 +1,5 @@
 # NlpBasic
-##data_preprocessing
+## data_preprocessing
 python的自然语言处理基础项目
 代码主要完成了将中文文本分词，去停用词，转化为tf-idf向量，等基本数据预处理操作
 ##logicRegression
